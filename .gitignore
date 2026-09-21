@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated training outputs and downloaded sessions
+runs/
+downloaded_sessions/
+*.tmp
+
+# Arduino and editor outputs
+build/
+*.elf
+*.map
+.vscode/
+.idea/
+
+# Operating-system files
+Thumbs.db
+.DS_Store
