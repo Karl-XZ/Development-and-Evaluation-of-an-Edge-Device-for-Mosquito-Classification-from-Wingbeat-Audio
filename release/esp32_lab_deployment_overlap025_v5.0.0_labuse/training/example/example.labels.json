@@ -1,0 +1,21 @@
+{
+  "signature": {
+    "schema": 2,
+    "confidence": 0.7,
+    "window_sec": 3.0,
+    "hop_sec": 1.0,
+    "target_sample_rate": 8000
+  },
+  "species": "Ae_aegypti_M",
+  "duration_sec": 60.0,
+  "regions": [
+    {
+      "detection_index": 1,
+      "start_sec": 12.0,
+      "end_sec": 18.5,
+      "duration_sec": 6.5,
+      "confidence": 0.87,
+      "class_id": 0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "experiment_name": "overlap025_pcen_exact3s_v005",
+  "dataset": {
+    "mode": "6class",
+    "classes": [
+      "ae_aegypti",
+      "cx_quin",
+      "an_dirus",
+      "an_minimus_f",
+      "an_minimus_m",
+      "no_mosquito"
+    ],
+    "window_sec": 0.5,
+    "window_stride_sec": 0.25,
+    "negative_margin_sec": 1.0,
+    "confidence_threshold": 0.7,
+    "seed": 20260723
+  },
+  "training": {
+    "sample_rate": 8000,
+    "resample_mode": "esp32_pair",
+    "input_context_sec": 1.5,
+    "context_alignment": "centered",
+    "n_mels": 64,
+    "n_fft": 256,
+    "hop_length": 80,
+    "frontend": "pcen",
+    "pcen_alpha": 0.6,
+    "pcen_delta": 2.0,
+    "pcen_r": 0.25,
+    "pcen_time_constant": 0.8,
+    "pcen_eps": 0.000001,
+    "input_normalization": "global",
+    "epochs": 30,
+    "batch_size": 64,
+    "workers": 4,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 8,
+    "folds": "0,1,2,3,4",
+    "device": "auto"
+  },
+  "export": {
+    "symbol": "model_overlap025",
+    "representative_samples": 192,
+    "verification_samples": 240
+  },
+  "deployment": {
+    "aggregation_contexts": 3,
+    "context_ranges_sec": [
+      [0.0, 1.5],
+      [0.75, 2.25],
+      [1.5, 3.0]
+    ],
+    "reported_decision_hop_sec": 3.0,
+    "effective_audio_support_sec": 3.0,
+    "notes": "Each live decision captures exactly 3.0 seconds and averages the three 1.5-second PCEN context probabilities. Consecutive decisions use a non-overlapping 3.0-second hop."
+  }
+}

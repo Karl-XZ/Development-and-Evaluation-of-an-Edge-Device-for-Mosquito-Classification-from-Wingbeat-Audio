@@ -1,0 +1,13 @@
+Module,Signal,Arduino Nano ESP32 pin,ESP32-S3 GPIO,Notes
+INMP441,VDD,3V3,,3.3 V only
+INMP441,GND,GND,,Common ground
+INMP441,SCK / BCLK,D2,GPIO5,I2S bit clock
+INMP441,WS / LRCLK,D3,GPIO6,I2S word select
+INMP441,SD,D4,GPIO7,I2S microphone data
+INMP441,L/R,GND,,Recommended reproducible wiring: GND selects the left I2S slot; firmware auto-detects the active slot and also accepts L/R tied to 3V3
+SD module,VCC,3V3,,Use a 3.3 V-compatible SD module
+SD module,GND,GND,,Common ground
+SD module,CS,D10,,SPI chip select
+SD module,MOSI,D11,,SPI MOSI
+SD module,MISO,D12,,SPI MISO
+SD module,SCK,D13,,SPI clock; firmware uses 1 MHz

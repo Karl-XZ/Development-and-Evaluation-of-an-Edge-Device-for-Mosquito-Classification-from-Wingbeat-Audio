@@ -1,0 +1,33 @@
+{
+  "package_version": "3.0.0",
+  "firmware": "lab_realtime_recorder_v3_0_0_melparity",
+  "model_sha256": "F5C80321C59020AE86213939CD1BCB600EDE8069CED0BACD3A31EEA54465C6BC",
+  "pc_tflite_backend_for_parity": "BUILTIN_REF",
+  "esp32_backend": "TensorFlow Lite Micro with unchanged speed patch",
+  "balanced_original_domain_test": {
+    "windows": 30,
+    "classes": 6,
+    "windows_per_class": 5,
+    "pc_esp32_prediction_agreement": 1.0,
+    "pc_accuracy": 1.0,
+    "esp32_accuracy": 1.0,
+    "feature_exact_value_fraction": 0.9999758554083885,
+    "feature_max_abs_int8_difference": 1,
+    "feature_ms_median": 68.0,
+    "inference_ms_median": 667.6145
+  },
+  "lab001_full_replay": {
+    "unique_pcm_contexts": 97,
+    "aggregated_decisions": 87,
+    "subwindow_prediction_agreement": 1.0,
+    "aggregated_prediction_agreement_with_builtin_ref": 1.0,
+    "feature_exact_value_fraction": 0.9999850652010651,
+    "feature_max_abs_int8_difference": 1,
+    "builtin_ref_exact_raw_output_vectors": 91,
+    "builtin_ref_raw_output_vectors_total": 97,
+    "raw_output_max_abs_int8_difference": 1,
+    "feature_ms_median": 68.0,
+    "inference_ms_median": 667.631
+  },
+  "note": "The default desktop XNNPACK delegate produced one-int8-step differences that changed two near-tied aggregate decisions. The TFLite BUILTIN_REF backend matches the TFLite Micro decision path on all 87 LAB001 aggregate decisions."
+}

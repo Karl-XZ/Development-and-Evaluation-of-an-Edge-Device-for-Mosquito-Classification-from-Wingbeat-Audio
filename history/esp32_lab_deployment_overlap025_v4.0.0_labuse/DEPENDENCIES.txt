@@ -1,0 +1,21 @@
+Verified Dependency Versions
+
+Hardware
+  Arduino Nano ESP32 (ESP32-S3)
+  INMP441 microphone
+  FAT32 SD card and an SD module supporting 3.3 V logic
+
+Arduino Environment
+  Arduino IDE: 2.3.10
+  arduino-cli: 1.5.1
+  Arduino ESP32 Boards: 2.0.18-arduino.5
+  FQBN: arduino:esp32:nano_nora
+
+Arduino Libraries
+  Chirale_TensorFLowLite: 2.0.0
+  SdFat: 2.3.0
+  SPI: provided with the board package
+
+Session Download Tool
+  Python: 3.10 or a compatible version
+  pyserial

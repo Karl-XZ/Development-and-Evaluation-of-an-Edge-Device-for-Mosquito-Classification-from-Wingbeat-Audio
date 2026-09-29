@@ -1,0 +1,383 @@
+{
+  "package_version": "v4.0.0",
+  "frontend": "pcen",
+  "pcen": {
+    "pcen_alpha": 0.6,
+    "pcen_delta": 2.0,
+    "pcen_r": 0.25,
+    "pcen_time_constant": 0.8,
+    "pcen_eps": 1e-06
+  },
+  "model_sha256": "b980a2b5e39fe5c44c008b3ca617999effb8b8d79349f54775e7fb0693f5173f",
+  "tested_decisions": 6,
+  "tested_subwindows": 18,
+  "feature_exact_equal_fraction_mean": 0.9999827538631347,
+  "feature_max_absolute_difference": 1,
+  "subwindow_prediction_agreement": 1.0,
+  "aggregate_prediction_agreement": 1.0,
+  "mean_feature_ms_per_context": 110.72222222222223,
+  "mean_inference_ms_per_context": 667.4819444444445,
+  "speed_patch_runtime_target": "CNN inference below 1000 ms per 1.5 s context",
+  "decisions": [
+    {
+      "source_label": "ae_aegypti",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 110,
+            "inference_ms": 667.473
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.562
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.535
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0001316666603088379
+    },
+    {
+      "source_label": "cx_quin",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.485
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.437
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.403
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0005075158551335335
+    },
+    {
+      "source_label": "an_dirus",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.383
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 110,
+            "inference_ms": 667.523
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.523
+          }
+        }
+      ],
+      "aggregate_pc": "an_dirus",
+      "aggregate_esp32": "an_dirus",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.009702637791633606
+    },
+    {
+      "source_label": "an_minimus_f",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 110,
+            "inference_ms": 667.459
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 110,
+            "inference_ms": 667.451
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.498
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 1.3951212167739868e-05
+    },
+    {
+      "source_label": "an_minimus_m",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.574
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.523
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.473
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_m",
+      "aggregate_esp32": "an_minimus_m",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.006358936429023743
+    },
+    {
+      "source_label": "no_mosquito",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.471
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 110,
+            "inference_ms": 667.415
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.487
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0006440281867980957
+    }
+  ]
+}

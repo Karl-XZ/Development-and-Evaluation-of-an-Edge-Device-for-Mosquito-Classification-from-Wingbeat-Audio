@@ -1,14 +1,14 @@
 # Development and Evaluation of an Edge Device for Mosquito Classification from Wingbeat Audio
 
-This repository contains the reproducible software artifact for a six-class mosquito wingbeat-audio classifier running on an Arduino Nano ESP32 (ESP32-S3). The current release implements an 8 kHz, 64-band Mel/PCEN frontend, a compact INT8 convolutional neural network, exact 3.0-second decision aggregation, continuous WAV/CSV recording, and recovery of historical SD-card sessions.
+This repository contains the reproducible software artifact for a six-class mosquito wingbeat-audio classifier running on an Arduino Nano ESP32 (ESP32-S3). The current release implements an 8 kHz, 64-band Mel frontend with log-Mel by default and optional PCEN, matched compact INT8 convolutional neural networks, exact 3.0-second decision aggregation, continuous WAV/CSV recording, and recovery of historical SD-card sessions.
 
 ## Current release
 
-The validated laboratory package is [`release/v004.0.0`](release/v004.0.0/README.md).
+The current laboratory package is **v5.0.0**: [`release/esp32_lab_deployment_overlap025_v5.0.0_labuse`](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/README.md).
 
 It contains:
 
-- a pretrained INT8 TFLite model and matching embedded C header;
+- pretrained log-Mel and PCEN INT8 TFLite models and matching embedded C headers, using the same original-audio training data and split;
 - complete Arduino firmware and precompiled binaries;
 - a five-fold retraining pipeline from WAV/JSON pairs;
 - automatic INT8 export, model-header replacement, speed-patch installation, compilation, and flashing;
@@ -35,18 +35,20 @@ INMP441, 16 kHz mono PCM16
 -> paired-sample reduction to 8 kHz
 -> 256-point STFT, 80-sample hop
 -> 64-band Mel power
--> context-local PCEN
+-> log-Mel by default, or context-local PCEN when selected
 -> INT8 CNN
 -> probability average over contexts [0.00,1.50], [0.75,2.25], [1.50,3.00] s
 -> one exact 3.0-second decision
 -> timestamped CSV plus the corresponding raw WAV
 ```
 
-The fixed PCEN parameters are `alpha=0.6`, `delta=2.0`, `r=0.25`, `time_constant=0.8 s`, and `epsilon=1e-6`.
+The optional PCEN frontend uses `alpha=0.6`, `delta=2.0`, `r=0.25`, `time_constant=0.8 s`, and `epsilon=1e-6`. Stop the current session with `E`, select log-Mel with `A` or PCEN with `B`, and start a new session with `4`. Power-on defaults to log-Mel.
 
 ## Quick start
 
-Open PowerShell in `release/v004.0.0` and follow one of the two supported paths.
+On Windows, use a short checkout path such as `C:\mosquito` to avoid path-length limits. The repository preserves the exact CMSIS-NN patch bytes across Git line-ending settings.
+
+Open PowerShell in `release/esp32_lab_deployment_overlap025_v5.0.0_labuse` and follow one of the two supported paths.
 
 ### Flash the included model
 
@@ -66,19 +68,38 @@ powershell -ExecutionPolicy Bypass -File .\tools\retrain_build_flash.ps1 `
   -Port COM12
 ```
 
-This command performs dataset checks, recording-level splits, five-fold PCEN training, validation-only fold selection, locked-test evaluation, full INT8 export, model/header installation, speed-patch verification, firmware compilation, and flashing. The release [README](release/v004.0.0/README.md) gives the complete data layout, manual commands, serial controls, download procedure, and CSV schema.
+This command performs dataset checks, recording-level splits, five-fold log-Mel training by default, validation-only fold selection, locked-test evaluation, full INT8 export, model/header installation, speed-patch verification, firmware compilation, and flashing. Add `-Frontend pcen` to train and replace the PCEN pair; after flashing, select `B` before starting a PCEN session. The release [README](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/README.md) gives the complete data layout, manual commands, serial controls, download procedure, and CSV schema.
 
 ## Verified implementation properties
 
-The release records the following hardware and software checks:
+The v5.0.0 checks recorded:
 
-- 18 subwindow predictions and six exact-3-second aggregate decisions agreed between PC and ESP32 on identical PCM;
-- 99.9983% of quantized PCEN input values were identical, with a maximum difference of one INT8 unit;
-- mean CNN inference time was 667.48 ms per 1.5-second context with the verified speed patch;
+- log-Mel same-PCM agreement in 90/90 subwindow classes and 30/30 exact-3-second aggregate classes, with 99.9971% exact INT8 feature agreement and a maximum difference of one unit;
+- PCEN same-PCM agreement in 89/90 subwindow classes and 30/30 aggregate classes, with 99.9990% exact INT8 feature agreement and a maximum difference of one unit; the differing subwindow had identical quantized input features and nearly tied outputs;
+- 147/147 aggregate classes reproduced on the PC from four saved hardware-session WAV/CSV pairs;
+- mean CNN inference time of about 668 ms per context with the automatic speed patch;
+- both training branches passed isolated one-epoch smoke training, INT8 export, model/header replacement, and compilation; source and precompiled uploads were tested;
+- the downloaded sessions had valid 16 kHz mono PCM16 recordings, with no recorded dropped blocks or skipped decisions. The longest v5.0.0 session in this audit was 264.064 seconds; the one-hour historical audit below used an earlier configuration.
+
+The corresponding reports are in [`release/esp32_lab_deployment_overlap025_v5.0.0_labuse/validation`](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/validation/). PCEN still produced substantial positive outputs in the current desktop-room background; target-setting validation is needed when choosing the frontend.
+
+## Historical v4.0.0 implementation audit
+
+The historical release and the supplementary thesis audit record the following hardware and software checks:
+
+- an expanded same-PCM audit covered 540 subwindow predictions and 180 exact-3-second decisions; 536 subwindow classes and all 180 aggregate classes agreed between PC and ESP32;
+- 99.9978% of quantized PCEN input values were identical, with a maximum difference of one INT8 unit;
+- mean PCEN feature extraction and CNN inference times were 110.86 ms and 667.50 ms per 1.5-second context, respectively;
+- the selected-fold FP32 and INT8 models differed by 0.165 Macro-F1 percentage points on the same 2,934 source-domain contexts;
 - the embedded model header matched the TFLite file byte for byte;
-- a 14.304-second hardware smoke session produced valid 16 kHz mono PCM16 WAV and CSV files with no dropped audio blocks or skipped decisions.
+- a 14.304-second hardware smoke session produced valid 16 kHz mono PCM16 WAV and CSV files with no dropped audio blocks or skipped decisions;
+- a separate one-hour session contained exactly 57,600,000 PCM frames and all 1,200 expected non-overlapping three-second decisions, with zero skipped hops.
 
-The source reports for these checks are stored in [`release/v004.0.0/validation`](release/v004.0.0/validation/).
+The source reports for these historical checks are stored in [`history/esp32_lab_deployment_overlap025_v4.0.0_labuse/validation`](history/esp32_lab_deployment_overlap025_v4.0.0_labuse/validation/), including the expanded reports in [`supplementary_20260921`](history/esp32_lab_deployment_overlap025_v4.0.0_labuse/validation/supplementary_20260921/).
+
+## Historical versions
+
+Deployment versions v1.0.0 through v4.0.0 are stored in [`history/`](history/README.md). Folder names follow `esp32_lab_deployment_overlap025_vX.0.0_labuse`; the current version is v5.0.0. Internal firmware filenames and saved report filenames are retained so the archived and tested artifacts remain identifiable.
 
 ## Data availability
 

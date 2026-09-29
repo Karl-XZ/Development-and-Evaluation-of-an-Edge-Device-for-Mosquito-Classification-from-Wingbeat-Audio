@@ -1,0 +1,88 @@
+{
+  "checkpoint": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v004_original_audio_pcen_robust_5fold_20260917\\model\\fold_3\\best.pt",
+  "frontend": "pcen",
+  "input_normalization": "global",
+  "class_names": [
+    "ae_aegypti",
+    "cx_quin",
+    "an_dirus",
+    "an_minimus_f",
+    "an_minimus_m",
+    "no_mosquito"
+  ],
+  "model_bytes": 25072,
+  "input_shape": [
+    1,
+    64,
+    151,
+    1
+  ],
+  "input_quantization": {
+    "scale": 0.09056302160024643,
+    "zero_point": -114
+  },
+  "output_quantization": {
+    "scale": 0.08401762694120407,
+    "zero_point": 39
+  },
+  "verification_samples": 240,
+  "pytorch_keras_max_abs_logit_error": 6.67572021484375e-06,
+  "keras_tflite_max_abs_logit_error": 1.4072041511535645,
+  "prediction_agreement": 0.9833333333333333,
+  "tflite_accuracy_on_verification_subset": 0.9041666666666667,
+  "tflite_macro_f1_on_verification_subset": 0.903370840714096,
+  "confusion_matrix": [
+    [
+      39,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      35,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      7,
+      0,
+      33,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      40,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      38,
+      2
+    ],
+    [
+      0,
+      2,
+      2,
+      2,
+      2,
+      32
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "true labels",
+    "columns": "predicted labels"
+  }
+}

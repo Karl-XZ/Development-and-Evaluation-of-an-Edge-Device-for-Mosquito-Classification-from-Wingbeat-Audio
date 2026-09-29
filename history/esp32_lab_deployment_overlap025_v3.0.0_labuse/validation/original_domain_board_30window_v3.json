@@ -1,0 +1,1259 @@
+{
+  "windows": 30,
+  "per_class": {
+    "cx_quin": 5,
+    "an_dirus": 5,
+    "ae_aegypti": 5,
+    "an_minimus_f": 5,
+    "an_minimus_m": 5,
+    "no_mosquito": 5
+  },
+  "feature_exact_all_values_fraction": 0.9999758554083885,
+  "feature_worst_window_fraction": 0.999896523178808,
+  "feature_max_abs_difference": 1,
+  "board_pc_prediction_agreement": 1.0,
+  "board_accuracy": 1.0,
+  "pc_accuracy": 1.0,
+  "feature_ms": {
+    "median": 68.0,
+    "max": 68
+  },
+  "inference_ms": {
+    "median": 667.6145,
+    "max": 667.689
+  },
+  "stop_output": "LIVE_STOPPED reason=user\r\n",
+  "restart_output": "LIVE_STARTED mode=4 calibrated=0 no_threshold=0.00000 overlap025_selected_fold standard_window_sec=3 hop_sec=1\r\nSESSION_FILES wav=LAB027.WAV csv=LAB027.CSV\r\n",
+  "details": [
+    {
+      "label": "cx_quin",
+      "recording_id": "Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 48.75173,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -39,
+        78,
+        -90,
+        -68,
+        -94,
+        49
+      ],
+      "pc_raw": [
+        -39,
+        78,
+        -90,
+        -68,
+        -94,
+        48
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999885228391143
+      },
+      "board_prediction": "cx_quin",
+      "pc_prediction": "cx_quin",
+      "feature_ms": 68,
+      "inference_ms": 667.595
+    },
+    {
+      "label": "an_dirus",
+      "recording_id": "An_dirus_M__rec3526849229__20260702_060000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 959.16679,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998281100992
+      },
+      "board_raw": [
+        22,
+        -52,
+        47,
+        -59,
+        -29,
+        -12
+      ],
+      "pc_raw": [
+        22,
+        -52,
+        47,
+        -59,
+        -29,
+        -12
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_dirus",
+      "pc_prediction": "an_dirus",
+      "feature_ms": 67,
+      "inference_ms": 667.656
+    },
+    {
+      "label": "an_dirus",
+      "recording_id": "An_dirus_M__rec3526849229__20260701_230000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 2081.256556,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998280298584
+      },
+      "board_raw": [
+        -47,
+        -29,
+        71,
+        -46,
+        -1,
+        -67
+      ],
+      "pc_raw": [
+        -47,
+        -29,
+        71,
+        -46,
+        -1,
+        -67
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_dirus",
+      "pc_prediction": "an_dirus",
+      "feature_ms": 68,
+      "inference_ms": 667.58
+    },
+    {
+      "label": "ae_aegypti",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 3077.5,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        50,
+        -63,
+        -2,
+        -62,
+        -39,
+        10
+      ],
+      "pc_raw": [
+        51,
+        -63,
+        -1,
+        -62,
+        -39,
+        10
+      ],
+      "output": {
+        "exact_equal": 4,
+        "total": 6,
+        "exact_equal_fraction": 0.6666666666666666,
+        "mean_absolute_difference": 0.3333333333333333,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999685631959442
+      },
+      "board_prediction": "ae_aegypti",
+      "pc_prediction": "ae_aegypti",
+      "feature_ms": 68,
+      "inference_ms": 667.613
+    },
+    {
+      "label": "cx_quin",
+      "recording_id": "Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 81.00158,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -61,
+        80,
+        -83,
+        -61,
+        -83,
+        44
+      ],
+      "pc_raw": [
+        -61,
+        81,
+        -83,
+        -61,
+        -84,
+        44
+      ],
+      "output": {
+        "exact_equal": 4,
+        "total": 6,
+        "exact_equal_fraction": 0.6666666666666666,
+        "mean_absolute_difference": 0.3333333333333333,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999814900067984
+      },
+      "board_prediction": "cx_quin",
+      "pc_prediction": "cx_quin",
+      "feature_ms": 68,
+      "inference_ms": 667.639
+    },
+    {
+      "label": "an_minimus_f",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260716_140000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 500.75,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998279468446
+      },
+      "board_raw": [
+        -37,
+        5,
+        -60,
+        54,
+        -50,
+        -4
+      ],
+      "pc_raw": [
+        -37,
+        5,
+        -60,
+        54,
+        -50,
+        -5
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999544612969304
+      },
+      "board_prediction": "an_minimus_f",
+      "pc_prediction": "an_minimus_f",
+      "feature_ms": 68,
+      "inference_ms": 667.689
+    },
+    {
+      "label": "an_minimus_m",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_000000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1602.264404,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -66,
+        -78,
+        -65,
+        -62,
+        82,
+        -8
+      ],
+      "pc_raw": [
+        -66,
+        -78,
+        -65,
+        -62,
+        82,
+        -8
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_m",
+      "pc_prediction": "an_minimus_m",
+      "feature_ms": 67,
+      "inference_ms": 667.631
+    },
+    {
+      "label": "an_minimus_m",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_000000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 774.5,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -52,
+        -81,
+        -55,
+        -35,
+        65,
+        -12
+      ],
+      "pc_raw": [
+        -52,
+        -81,
+        -55,
+        -35,
+        65,
+        -13
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999688185960479
+      },
+      "board_prediction": "an_minimus_m",
+      "pc_prediction": "an_minimus_m",
+      "feature_ms": 68,
+      "inference_ms": 667.588
+    },
+    {
+      "label": "no_mosquito",
+      "recording_id": "An_dirus_M__rec3526849229__20260702_100000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 710.75,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        0,
+        -27,
+        -27,
+        -37,
+        -88,
+        65
+      ],
+      "pc_raw": [
+        0,
+        -27,
+        -27,
+        -37,
+        -88,
+        65
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "no_mosquito",
+      "pc_prediction": "no_mosquito",
+      "feature_ms": 68,
+      "inference_ms": 667.553
+    },
+    {
+      "label": "an_minimus_f",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260717_220000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 447.5087,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998282344041
+      },
+      "board_raw": [
+        -60,
+        -18,
+        -76,
+        99,
+        -49,
+        -6
+      ],
+      "pc_raw": [
+        -60,
+        -18,
+        -76,
+        99,
+        -49,
+        -6
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_f",
+      "pc_prediction": "an_minimus_f",
+      "feature_ms": 68,
+      "inference_ms": 667.609
+    },
+    {
+      "label": "an_minimus_f",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1100.0048,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        -53,
+        -20,
+        -63,
+        108,
+        -32,
+        -51
+      ],
+      "pc_raw": [
+        -53,
+        -19,
+        -64,
+        108,
+        -32,
+        -51
+      ],
+      "output": {
+        "exact_equal": 4,
+        "total": 6,
+        "exact_equal_fraction": 0.6666666666666666,
+        "mean_absolute_difference": 0.3333333333333333,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999534310380479
+      },
+      "board_prediction": "an_minimus_f",
+      "pc_prediction": "an_minimus_f",
+      "feature_ms": 68,
+      "inference_ms": 667.637
+    },
+    {
+      "label": "an_minimus_m",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_000000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 905.752354,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        -63,
+        -84,
+        -71,
+        -27,
+        85,
+        -39
+      ],
+      "pc_raw": [
+        -63,
+        -84,
+        -71,
+        -27,
+        85,
+        -39
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_m",
+      "pc_prediction": "an_minimus_m",
+      "feature_ms": 67,
+      "inference_ms": 667.602
+    },
+    {
+      "label": "no_mosquito",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_090000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 794.75,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        41,
+        -61,
+        -26,
+        -49,
+        -87,
+        67
+      ],
+      "pc_raw": [
+        41,
+        -61,
+        -26,
+        -49,
+        -87,
+        66
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999882073228744
+      },
+      "board_prediction": "no_mosquito",
+      "pc_prediction": "no_mosquito",
+      "feature_ms": 68,
+      "inference_ms": 667.608
+    },
+    {
+      "label": "an_dirus",
+      "recording_id": "An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 408.508352,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        4,
+        -31,
+        60,
+        -66,
+        -22,
+        -22
+      ],
+      "pc_raw": [
+        4,
+        -31,
+        60,
+        -66,
+        -22,
+        -21
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999536878129079
+      },
+      "board_prediction": "an_dirus",
+      "pc_prediction": "an_dirus",
+      "feature_ms": 68,
+      "inference_ms": 667.656
+    },
+    {
+      "label": "ae_aegypti",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1852.75,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        52,
+        -54,
+        -30,
+        -39,
+        -31,
+        -10
+      ],
+      "pc_raw": [
+        52,
+        -54,
+        -30,
+        -39,
+        -31,
+        -10
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "ae_aegypti",
+      "pc_prediction": "ae_aegypti",
+      "feature_ms": 68,
+      "inference_ms": 667.669
+    },
+    {
+      "label": "an_dirus",
+      "recording_id": "An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 2321.26839,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        1,
+        -44,
+        60,
+        -66,
+        -13,
+        -31
+      ],
+      "pc_raw": [
+        1,
+        -44,
+        60,
+        -65,
+        -12,
+        -31
+      ],
+      "output": {
+        "exact_equal": 4,
+        "total": 6,
+        "exact_equal_fraction": 0.6666666666666666,
+        "mean_absolute_difference": 0.3333333333333333,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999423990399101
+      },
+      "board_prediction": "an_dirus",
+      "pc_prediction": "an_dirus",
+      "feature_ms": 67,
+      "inference_ms": 667.619
+    },
+    {
+      "label": "cx_quin",
+      "recording_id": "Cx_quin_M__rec2178794111__20260701_150000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 858.0,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        -17,
+        57,
+        -51,
+        -43,
+        -77,
+        14
+      ],
+      "pc_raw": [
+        -17,
+        57,
+        -51,
+        -43,
+        -77,
+        14
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "cx_quin",
+      "pc_prediction": "cx_quin",
+      "feature_ms": 68,
+      "inference_ms": 667.664
+    },
+    {
+      "label": "ae_aegypti",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1956.25,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        70,
+        -41,
+        -44,
+        -59,
+        4,
+        -78
+      ],
+      "pc_raw": [
+        70,
+        -41,
+        -44,
+        -59,
+        4,
+        -78
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999999
+      },
+      "board_prediction": "ae_aegypti",
+      "pc_prediction": "ae_aegypti",
+      "feature_ms": 67,
+      "inference_ms": 667.626
+    },
+    {
+      "label": "no_mosquito",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_020000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 3231.75,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998279728238
+      },
+      "board_raw": [
+        -79,
+        -89,
+        -70,
+        -24,
+        39,
+        45
+      ],
+      "pc_raw": [
+        -79,
+        -89,
+        -70,
+        -24,
+        39,
+        45
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "no_mosquito",
+      "pc_prediction": "no_mosquito",
+      "feature_ms": 68,
+      "inference_ms": 667.63
+    },
+    {
+      "label": "no_mosquito",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260717_220000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1570.5,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -75,
+        -53,
+        -113,
+        67,
+        -50,
+        87
+      ],
+      "pc_raw": [
+        -76,
+        -53,
+        -113,
+        67,
+        -50,
+        86
+      ],
+      "output": {
+        "exact_equal": 4,
+        "total": 6,
+        "exact_equal_fraction": 0.6666666666666666,
+        "mean_absolute_difference": 0.3333333333333333,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999810657394307
+      },
+      "board_prediction": "no_mosquito",
+      "pc_prediction": "no_mosquito",
+      "feature_ms": 68,
+      "inference_ms": 667.579
+    },
+    {
+      "label": "an_minimus_m",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_020000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 2268.751195,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        -100,
+        -78,
+        -49,
+        -81,
+        92,
+        -5
+      ],
+      "pc_raw": [
+        -100,
+        -78,
+        -49,
+        -81,
+        92,
+        -5
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_m",
+      "pc_prediction": "an_minimus_m",
+      "feature_ms": 68,
+      "inference_ms": 667.544
+    },
+    {
+      "label": "an_minimus_f",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 3355.25181,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 0.9999999999999998
+      },
+      "board_raw": [
+        -67,
+        -38,
+        -74,
+        98,
+        -32,
+        -15
+      ],
+      "pc_raw": [
+        -67,
+        -38,
+        -74,
+        98,
+        -32,
+        -15
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_f",
+      "pc_prediction": "an_minimus_f",
+      "feature_ms": 68,
+      "inference_ms": 667.639
+    },
+    {
+      "label": "cx_quin",
+      "recording_id": "Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 37.75173,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998278752888
+      },
+      "board_raw": [
+        -18,
+        77,
+        -90,
+        -61,
+        -78,
+        12
+      ],
+      "pc_raw": [
+        -18,
+        77,
+        -90,
+        -61,
+        -78,
+        12
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "cx_quin",
+      "pc_prediction": "cx_quin",
+      "feature_ms": 68,
+      "inference_ms": 667.535
+    },
+    {
+      "label": "an_minimus_f",
+      "recording_id": "An_minimus_F__Cage-03__rec2178794111_20260717_210000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 706.25,
+      "feature": {
+        "exact_equal": 9663,
+        "total": 9664,
+        "exact_equal_fraction": 0.999896523178808,
+        "mean_absolute_difference": 0.00010347682119205298,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999998279976167
+      },
+      "board_raw": [
+        -45,
+        -33,
+        -63,
+        84,
+        -26,
+        -15
+      ],
+      "pc_raw": [
+        -45,
+        -33,
+        -64,
+        84,
+        -26,
+        -15
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999751987075457
+      },
+      "board_prediction": "an_minimus_f",
+      "pc_prediction": "an_minimus_f",
+      "feature_ms": 68,
+      "inference_ms": 667.607
+    },
+    {
+      "label": "cx_quin",
+      "recording_id": "Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 40.50173,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -41,
+        80,
+        -81,
+        -62,
+        -86,
+        35
+      ],
+      "pc_raw": [
+        -41,
+        80,
+        -81,
+        -62,
+        -86,
+        35
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "cx_quin",
+      "pc_prediction": "cx_quin",
+      "feature_ms": 68,
+      "inference_ms": 667.656
+    },
+    {
+      "label": "ae_aegypti",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 2867.946427,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        29,
+        -52,
+        -30,
+        -14,
+        -29,
+        -1
+      ],
+      "pc_raw": [
+        29,
+        -52,
+        -30,
+        -14,
+        -29,
+        -1
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "ae_aegypti",
+      "pc_prediction": "ae_aegypti",
+      "feature_ms": 68,
+      "inference_ms": 667.605
+    },
+    {
+      "label": "no_mosquito",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260716_160000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 3384.25,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -58,
+        -109,
+        -44,
+        -43,
+        32,
+        66
+      ],
+      "pc_raw": [
+        -58,
+        -109,
+        -44,
+        -43,
+        31,
+        66
+      ],
+      "output": {
+        "exact_equal": 5,
+        "total": 6,
+        "exact_equal_fraction": 0.8333333333333334,
+        "mean_absolute_difference": 0.16666666666666666,
+        "max_absolute_difference": 1,
+        "correlation": 0.9999834954862149
+      },
+      "board_prediction": "no_mosquito",
+      "pc_prediction": "no_mosquito",
+      "feature_ms": 68,
+      "inference_ms": 667.599
+    },
+    {
+      "label": "an_dirus",
+      "recording_id": "An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 395.25,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -14,
+        -38,
+        75,
+        -72,
+        -16,
+        -28
+      ],
+      "pc_raw": [
+        -14,
+        -38,
+        75,
+        -72,
+        -16,
+        -28
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_dirus",
+      "pc_prediction": "an_dirus",
+      "feature_ms": 68,
+      "inference_ms": 667.616
+    },
+    {
+      "label": "an_minimus_m",
+      "recording_id": "An_minimus_M__Cage-02__rec3526849229_20260718_000000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 1249.75,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        -89,
+        -68,
+        -74,
+        -65,
+        106,
+        -62
+      ],
+      "pc_raw": [
+        -89,
+        -68,
+        -74,
+        -65,
+        106,
+        -62
+      ],
+      "output": {
+        "exact_equal": 6,
+        "total": 6,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_prediction": "an_minimus_m",
+      "pc_prediction": "an_minimus_m",
+      "feature_ms": 68,
+      "inference_ms": 667.525
+    },
+    {
+      "label": "ae_aegypti",
+      "recording_id": "Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled",
+      "start_sec": 2854.25,
+      "feature": {
+        "exact_equal": 9664,
+        "total": 9664,
+        "exact_equal_fraction": 1.0,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0,
+        "correlation": 1.0
+      },
+      "board_raw": [
+        49,
+        -44,
+        -41,
+        -26,
+        -23,
+        -22
+      ],
+      "pc_raw": [
+        48,
+        -44,
+        -40,
+        -27,
+        -23,
+        -22
+      ],
+      "output": {
+        "exact_equal": 3,
+        "total": 6,
+        "exact_equal_fraction": 0.5,
+        "mean_absolute_difference": 0.5,
+        "max_absolute_difference": 1,
+        "correlation": 0.9998511330707415
+      },
+      "board_prediction": "ae_aegypti",
+      "pc_prediction": "ae_aegypti",
+      "feature_ms": 68,
+      "inference_ms": 667.617
+    }
+  ]
+}

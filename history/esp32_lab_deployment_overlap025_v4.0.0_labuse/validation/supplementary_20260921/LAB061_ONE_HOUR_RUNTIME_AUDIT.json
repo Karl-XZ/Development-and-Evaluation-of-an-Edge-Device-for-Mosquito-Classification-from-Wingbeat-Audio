@@ -1,0 +1,50 @@
+{
+  "session": "LAB061",
+  "firmware_comments": [
+    "# firmware=lab_realtime_recorder_LAB046_pcen_fold2_exact3s_1h_v1",
+    "# frontend=pytorch_mel_exact_context_local_pcen",
+    "# deployed_model=LAB046_pcen_fold2_epoch29_int8",
+    "# sample_rate_hz=16000,channels=1,bits_per_sample=16",
+    "# maximum_recording_seconds=3600",
+    "# mode=4,calibrated=0"
+  ],
+  "wav": {
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "frames": 57600000,
+    "duration_sec": 3600.0
+  },
+  "decision_rows": 1200,
+  "expected_decisions_for_3600_sec_at_3sec_hop": 1200,
+  "support_start_sequence_complete": true,
+  "first_support_ms": [
+    0,
+    3000
+  ],
+  "last_support_ms": [
+    3597000,
+    3600000
+  ],
+  "skipped_hops_final": 0,
+  "latency_ms": {
+    "median": 2969.0,
+    "p95": 2981.0,
+    "maximum": 3909.0
+  },
+  "audio_lag_ms": {
+    "median": 920.0,
+    "p95": 928.0,
+    "maximum": 992.0
+  },
+  "feature_ms": {
+    "median": 298.0,
+    "maximum": 313.0
+  },
+  "inference_ms": {
+    "median": 2112.0,
+    "maximum": 2157.0
+  },
+  "conclusion": "The saved WAV contains exactly 3600 seconds, all 1200 non-overlapping 3-second decision supports are present in order, and skipped_hops_total is zero.",
+  "scope_note": "The CSV does not expose a dropped_blocks column. Exact sample count and complete decision support sequence provide the available continuity evidence."
+}

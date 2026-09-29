@@ -1,0 +1,55 @@
+{
+  "scope": "External qualitative output audit only. LAB001 lacks reliable window-level ground truth, so no accuracy/F1 claim is made.",
+  "wav": "C:\\Users\\Administrator\\Downloads\\LAB001.WAV",
+  "wav_info": {
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "duration_sec": 118.56,
+    "subtype": "PCM_16"
+  },
+  "logmel": {
+    "n_exact_3s_decisions": 39,
+    "covered_audio_sec": 117.0,
+    "prediction_counts": {
+      "ae_aegypti": 14,
+      "cx_quin": 0,
+      "an_dirus": 0,
+      "an_minimus_f": 0,
+      "an_minimus_m": 0,
+      "no_mosquito": 25
+    },
+    "prediction_fractions": {
+      "ae_aegypti": 0.358974358974359,
+      "cx_quin": 0.0,
+      "an_dirus": 0.0,
+      "an_minimus_f": 0.0,
+      "an_minimus_m": 0.0,
+      "no_mosquito": 0.6410256410256411
+    },
+    "mean_max_probability": 0.6252684593200684,
+    "median_max_probability": 0.5889701843261719
+  },
+  "pcen": {
+    "n_exact_3s_decisions": 39,
+    "covered_audio_sec": 117.0,
+    "prediction_counts": {
+      "ae_aegypti": 14,
+      "cx_quin": 0,
+      "an_dirus": 0,
+      "an_minimus_f": 0,
+      "an_minimus_m": 0,
+      "no_mosquito": 25
+    },
+    "prediction_fractions": {
+      "ae_aegypti": 0.358974358974359,
+      "cx_quin": 0.0,
+      "an_dirus": 0.0,
+      "an_minimus_f": 0.0,
+      "an_minimus_m": 0.0,
+      "no_mosquito": 0.6410256410256411
+    },
+    "mean_max_probability": 0.6177493333816528,
+    "median_max_probability": 0.594776451587677
+  },
+  "prediction_agreement": 0.48717948717948717
+}

@@ -1,0 +1,2 @@
+# Preserve exact CMSIS-NN patch bytes; installation verifies their checksums.
+**/speed_patch/*.c -text

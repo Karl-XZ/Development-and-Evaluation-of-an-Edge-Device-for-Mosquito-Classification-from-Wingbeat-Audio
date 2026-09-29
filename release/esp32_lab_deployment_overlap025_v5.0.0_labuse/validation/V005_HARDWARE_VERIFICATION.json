@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-29",
+  "hardware": "Arduino Nano ESP32 (ESP32-S3) with INMP441 and SD card",
+  "firmware": "lab_realtime_recorder_v005_dual_frontend_exact3s",
+  "model_source": "123 original WAV/JSON pairs; the two included selected-fold models used the same data split",
+  "default_frontend_after_flash": "logmel",
+  "optional_frontend_command": "B selects pcen after the current session stops; A restores logmel",
+  "speed_patch": "installed and verified automatically by build_flash_included.ps1",
+  "build_and_flash": "source compilation, wrapper upload, and direct precompiled upload succeeded",
+  "training_workflow": "both logmel and pcen branches passed isolated one-epoch smoke training, INT8 export, model/header replacement, speed-patch installation, and compilation; the submitted models were not replaced by smoke outputs",
+  "same_pcm": {
+    "manifest": "original-audio held-out test.csv; five selected decisions per class",
+    "logmel": {
+      "decisions": 30,
+      "subwindows": 90,
+      "feature_exact_equal_fraction_mean": 0.9999712564385577,
+      "feature_max_int8_difference": 1,
+      "subwindow_class_agreement": "90/90",
+      "aggregate_class_agreement": "30/30",
+      "mean_cnn_inference_ms_per_context": 667.6029222222222,
+      "details": "V005_LOGMEL_EXACT3S_PARITY.json"
+    },
+    "pcen": {
+      "decisions": 30,
+      "subwindows": 90,
+      "feature_exact_equal_fraction_mean": 0.999989652317881,
+      "feature_max_int8_difference": 1,
+      "subwindow_class_agreement": "89/90",
+      "aggregate_class_agreement": "30/30",
+      "mean_cnn_inference_ms_per_context": 667.4804111111112,
+      "note": "One subwindow had identical quantized features; two near-tied raw INT8 class outputs differed by one unit and reversed the subwindow class. Its aggregated decision agreed.",
+      "details": "V005_PCEN_EXACT3S_PARITY.json"
+    }
+  },
+  "sessions": [
+    {"id": "LAB079", "frontend": "logmel", "wav_seconds": 27.04, "prediction_rows": 8, "skipped_hops": 0, "dropped_blocks": 0},
+    {"id": "LAB080", "frontend": "pcen", "wav_seconds": 17.312, "prediction_rows": 5, "skipped_hops": 0, "dropped_blocks": 0},
+    {"id": "LAB081", "frontend": "logmel", "wav_seconds": 264.064, "prediction_rows": 87, "skipped_hops": 0, "dropped_blocks": 0},
+    {"id": "LAB083", "frontend": "pcen", "wav_seconds": 142.016, "prediction_rows": 47, "skipped_hops": 0, "dropped_blocks": 0}
+  ],
+  "saved_wav_pc_replay": {
+    "aggregate_class_agreement": "147/147",
+    "maximum_class_probability_difference": 0.018874657909393355,
+    "details": "V005_SAVED_WAV_CSV_PC_REPLAY.json"
+  },
+  "ambient_output_observation": "No playback was intentionally started during the short hardware sessions. LAB080 produced an_minimus_f for 4/5 decisions, and LAB083 produced an_minimus_f for 44/47 decisions. These outputs require target-environment negative-audio validation before using PCEN there.",
+  "scope": "These checks verify compilation, model/frontend selection, recording integrity, runtime, and PC/ESP32 comparison on tested PCM. They do not establish accuracy for live mosquitoes in the laboratory."
+}

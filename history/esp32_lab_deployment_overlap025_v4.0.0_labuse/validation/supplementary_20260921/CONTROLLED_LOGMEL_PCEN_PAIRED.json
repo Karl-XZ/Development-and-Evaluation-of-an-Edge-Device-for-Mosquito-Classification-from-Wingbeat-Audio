@@ -1,0 +1,1421 @@
+{
+  "experiment": "E3 paired same-pipeline log-Mel versus PCEN",
+  "device": "cuda",
+  "models": {
+    "logmel": "C:\\Users\\Administrator\\Documents\\New project\\runs\\thesis_revision_20260921\\f002_logmel_5fold",
+    "pcen": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v004_original_audio_pcen_robust_5fold_20260917\\model"
+  },
+  "controls": "same dataset manifests, five folds, seed, CNN, optimizer, epoch budget, context geometry and ensemble rule; frontend compression is the active variable",
+  "domains": {
+    "source_locked_contexts": {
+      "evaluation_unit": "context",
+      "evidence_role": "source-domain locked test",
+      "n": 2934,
+      "logmel": {
+        "accuracy": 0.9621676891615542,
+        "macro_f1": 0.9620005827549255,
+        "confusion_matrix": [
+          [
+            488,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            460,
+            0,
+            0,
+            0,
+            29
+          ],
+          [
+            14,
+            0,
+            462,
+            0,
+            0,
+            13
+          ],
+          [
+            0,
+            0,
+            0,
+            487,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            487,
+            2
+          ],
+          [
+            8,
+            11,
+            6,
+            12,
+            13,
+            439
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.9568627450980393,
+            "recall": 0.9979550102249489,
+            "f1": 0.976976976976977,
+            "support": 489
+          },
+          "cx_quin": {
+            "precision": 0.9766454352441614,
+            "recall": 0.9406952965235174,
+            "f1": 0.9583333333333334,
+            "support": 489
+          },
+          "an_dirus": {
+            "precision": 0.9871794871794872,
+            "recall": 0.9447852760736196,
+            "f1": 0.9655172413793104,
+            "support": 489
+          },
+          "an_minimus_f": {
+            "precision": 0.9759519038076152,
+            "recall": 0.9959100204498977,
+            "f1": 0.9858299595141701,
+            "support": 489
+          },
+          "an_minimus_m": {
+            "precision": 0.974,
+            "recall": 0.9959100204498977,
+            "f1": 0.9848331648129423,
+            "support": 489
+          },
+          "no_mosquito": {
+            "precision": 0.9032921810699589,
+            "recall": 0.8977505112474438,
+            "f1": 0.9005128205128206,
+            "support": 489
+          }
+        },
+        "n_samples": 2934,
+        "mosquito_recall": 0.9807770961145195,
+        "no_mosquito_recall": 0.8977505112474438,
+        "no_mosquito_false_positive_rate": 0.10224948875255624,
+        "presence_balanced_accuracy": 0.9392638036809816
+      },
+      "pcen": {
+        "accuracy": 0.9134287661895024,
+        "macro_f1": 0.913535147882485,
+        "confusion_matrix": [
+          [
+            482,
+            0,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            445,
+            0,
+            0,
+            0,
+            44
+          ],
+          [
+            73,
+            0,
+            389,
+            0,
+            0,
+            27
+          ],
+          [
+            0,
+            0,
+            0,
+            486,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            458,
+            27
+          ],
+          [
+            14,
+            9,
+            5,
+            25,
+            16,
+            420
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.8456140350877193,
+            "recall": 0.9856850715746421,
+            "f1": 0.9102927289896128,
+            "support": 489
+          },
+          "cx_quin": {
+            "precision": 0.9801762114537445,
+            "recall": 0.9100204498977505,
+            "f1": 0.9437963944856841,
+            "support": 489
+          },
+          "an_dirus": {
+            "precision": 0.9823232323232324,
+            "recall": 0.7955010224948875,
+            "f1": 0.8790960451977402,
+            "support": 489
+          },
+          "an_minimus_f": {
+            "precision": 0.9473684210526315,
+            "recall": 0.9938650306748467,
+            "f1": 0.970059880239521,
+            "support": 489
+          },
+          "an_minimus_m": {
+            "precision": 0.9662447257383966,
+            "recall": 0.9366053169734151,
+            "f1": 0.9511941848390445,
+            "support": 489
+          },
+          "no_mosquito": {
+            "precision": 0.7969639468690702,
+            "recall": 0.8588957055214724,
+            "f1": 0.8267716535433071,
+            "support": 489
+          }
+        },
+        "n_samples": 2934,
+        "mosquito_recall": 0.9562372188139059,
+        "no_mosquito_recall": 0.8588957055214724,
+        "no_mosquito_false_positive_rate": 0.14110429447852757,
+        "presence_balanced_accuracy": 0.9075664621676891
+      },
+      "paired": {
+        "prediction_agreement": 0.9342194955691888,
+        "logmel_wrong_pcen_right": 20,
+        "logmel_right_pcen_wrong": 163,
+        "mcnemar_exact_two_sided_p": 4.60921634374995e-29,
+        "macro_f1_delta_pcen_minus_logmel": -0.04846543487244048,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          -0.057700868481474994,
+          -0.03979564226890215
+        ]
+      }
+    },
+    "R003_development_domain": {
+      "evaluation_unit": "strict",
+      "evidence_role": "PCEN model-selection/development domain",
+      "n": 1941,
+      "logmel": {
+        "accuracy": 0.8001030396702731,
+        "macro_f1": 0.44197351679313984,
+        "confusion_matrix": [
+          [
+            51,
+            0,
+            0,
+            0,
+            0,
+            70
+          ],
+          [
+            0,
+            51,
+            0,
+            0,
+            0,
+            14
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            99
+          ],
+          [
+            0,
+            0,
+            0,
+            46,
+            0,
+            75
+          ],
+          [
+            38,
+            3,
+            0,
+            57,
+            1,
+            23
+          ],
+          [
+            6,
+            1,
+            0,
+            0,
+            0,
+            1404
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.5257731958762887,
+            "recall": 0.4214876033057851,
+            "f1": 0.46788990825688076,
+            "support": 121
+          },
+          "cx_quin": {
+            "precision": 0.9272727272727272,
+            "recall": 0.7846153846153846,
+            "f1": 0.8500000000000001,
+            "support": 65
+          },
+          "an_dirus": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 101
+          },
+          "an_minimus_f": {
+            "precision": 0.44660194174757284,
+            "recall": 0.38016528925619836,
+            "f1": 0.41071428571428575,
+            "support": 121
+          },
+          "an_minimus_m": {
+            "precision": 1.0,
+            "recall": 0.00819672131147541,
+            "f1": 0.016260162601626018,
+            "support": 122
+          },
+          "no_mosquito": {
+            "precision": 0.8332344213649852,
+            "recall": 0.9950389794472005,
+            "f1": 0.9069767441860465,
+            "support": 1411
+          }
+        },
+        "n_samples": 1941,
+        "mosquito_recall": 0.469811320754717,
+        "no_mosquito_recall": 0.9950389794472005,
+        "no_mosquito_false_positive_rate": 0.0049610205527994555,
+        "presence_balanced_accuracy": 0.7324251501009588
+      },
+      "pcen": {
+        "accuracy": 0.8315301391035549,
+        "macro_f1": 0.5042832076846636,
+        "confusion_matrix": [
+          [
+            68,
+            6,
+            0,
+            0,
+            0,
+            47
+          ],
+          [
+            0,
+            55,
+            0,
+            0,
+            0,
+            10
+          ],
+          [
+            9,
+            6,
+            1,
+            1,
+            0,
+            84
+          ],
+          [
+            0,
+            0,
+            0,
+            115,
+            0,
+            6
+          ],
+          [
+            18,
+            0,
+            0,
+            82,
+            0,
+            22
+          ],
+          [
+            24,
+            6,
+            2,
+            4,
+            0,
+            1375
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.5714285714285714,
+            "recall": 0.5619834710743802,
+            "f1": 0.5666666666666667,
+            "support": 121
+          },
+          "cx_quin": {
+            "precision": 0.7534246575342466,
+            "recall": 0.8461538461538461,
+            "f1": 0.7971014492753623,
+            "support": 65
+          },
+          "an_dirus": {
+            "precision": 0.3333333333333333,
+            "recall": 0.009900990099009901,
+            "f1": 0.019230769230769232,
+            "support": 101
+          },
+          "an_minimus_f": {
+            "precision": 0.5693069306930693,
+            "recall": 0.9504132231404959,
+            "f1": 0.7120743034055727,
+            "support": 121
+          },
+          "an_minimus_m": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 122
+          },
+          "no_mosquito": {
+            "precision": 0.8905440414507773,
+            "recall": 0.9744861800141743,
+            "f1": 0.9306260575296108,
+            "support": 1411
+          }
+        },
+        "n_samples": 1941,
+        "mosquito_recall": 0.6811320754716981,
+        "no_mosquito_recall": 0.9744861800141743,
+        "no_mosquito_false_positive_rate": 0.025513819985825692,
+        "presence_balanced_accuracy": 0.8278091277429362
+      },
+      "paired": {
+        "prediction_agreement": 0.9057187017001546,
+        "logmel_wrong_pcen_right": 95,
+        "logmel_right_pcen_wrong": 34,
+        "mcnemar_exact_two_sided_p": 7.340990314237488e-08,
+        "macro_f1_delta_pcen_minus_logmel": 0.06230969089152377,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          0.03897855732306045,
+          0.08616431106493738
+        ]
+      }
+    },
+    "LAB048_development_domain": {
+      "evaluation_unit": "strict",
+      "evidence_role": "PCEN model-selection/development domain",
+      "n": 190,
+      "logmel": {
+        "accuracy": 0.8631578947368421,
+        "macro_f1": 0.8455522806018823,
+        "confusion_matrix": [
+          [
+            16,
+            2,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            3,
+            15,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            0,
+            16,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            23,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            70
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.7619047619047619,
+            "recall": 0.6666666666666666,
+            "f1": 0.7111111111111111,
+            "support": 24
+          },
+          "cx_quin": {
+            "precision": 0.8823529411764706,
+            "recall": 0.625,
+            "f1": 0.7317073170731708,
+            "support": 24
+          },
+          "an_dirus": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 24
+          },
+          "an_minimus_f": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 24
+          },
+          "an_minimus_m": {
+            "precision": 0.92,
+            "recall": 0.9583333333333334,
+            "f1": 0.9387755102040817,
+            "support": 24
+          },
+          "no_mosquito": {
+            "precision": 0.8045977011494253,
+            "recall": 1.0,
+            "f1": 0.8917197452229298,
+            "support": 70
+          }
+        },
+        "n_samples": 190,
+        "mosquito_recall": 0.8583333333333333,
+        "no_mosquito_recall": 1.0,
+        "no_mosquito_false_positive_rate": 0.0,
+        "presence_balanced_accuracy": 0.9291666666666667
+      },
+      "pcen": {
+        "accuracy": 0.6947368421052632,
+        "macro_f1": 0.5951153588927971,
+        "confusion_matrix": [
+          [
+            11,
+            0,
+            0,
+            7,
+            1,
+            5
+          ],
+          [
+            0,
+            19,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            3,
+            0,
+            7,
+            11,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            17,
+            3,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            68
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.7857142857142857,
+            "recall": 0.4583333333333333,
+            "f1": 0.5789473684210527,
+            "support": 24
+          },
+          "cx_quin": {
+            "precision": 1.0,
+            "recall": 0.7916666666666666,
+            "f1": 0.8837209302325582,
+            "support": 24
+          },
+          "an_dirus": {
+            "precision": 1.0,
+            "recall": 0.2916666666666667,
+            "f1": 0.45161290322580644,
+            "support": 24
+          },
+          "an_minimus_f": {
+            "precision": 0.39344262295081966,
+            "recall": 1.0,
+            "f1": 0.5647058823529412,
+            "support": 24
+          },
+          "an_minimus_m": {
+            "precision": 0.75,
+            "recall": 0.125,
+            "f1": 0.21428571428571427,
+            "support": 24
+          },
+          "no_mosquito": {
+            "precision": 0.8,
+            "recall": 0.9714285714285714,
+            "f1": 0.8774193548387097,
+            "support": 70
+          }
+        },
+        "n_samples": 190,
+        "mosquito_recall": 0.8583333333333333,
+        "no_mosquito_recall": 0.9714285714285714,
+        "no_mosquito_false_positive_rate": 0.02857142857142858,
+        "presence_balanced_accuracy": 0.9148809523809524
+      },
+      "paired": {
+        "prediction_agreement": 0.7473684210526316,
+        "logmel_wrong_pcen_right": 6,
+        "logmel_right_pcen_wrong": 38,
+        "mcnemar_exact_two_sided_p": 9.430375484953402e-07,
+        "macro_f1_delta_pcen_minus_logmel": -0.25043692170908516,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          -0.32720559380672265,
+          -0.17663045105957847
+        ]
+      }
+    },
+    "LAB053_development_domain": {
+      "evaluation_unit": "strict",
+      "evidence_role": "PCEN model-selection/development domain",
+      "n": 190,
+      "logmel": {
+        "accuracy": 0.7789473684210526,
+        "macro_f1": 0.7438654972273168,
+        "confusion_matrix": [
+          [
+            12,
+            6,
+            1,
+            0,
+            0,
+            5
+          ],
+          [
+            2,
+            15,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            0,
+            17,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            1,
+            12,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            68
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.75,
+            "recall": 0.5,
+            "f1": 0.6,
+            "support": 24
+          },
+          "cx_quin": {
+            "precision": 0.6521739130434783,
+            "recall": 0.625,
+            "f1": 0.6382978723404256,
+            "support": 24
+          },
+          "an_dirus": {
+            "precision": 0.7727272727272727,
+            "recall": 0.7083333333333334,
+            "f1": 0.7391304347826088,
+            "support": 24
+          },
+          "an_minimus_f": {
+            "precision": 0.96,
+            "recall": 1.0,
+            "f1": 0.9795918367346939,
+            "support": 24
+          },
+          "an_minimus_m": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 24
+          },
+          "no_mosquito": {
+            "precision": 0.7391304347826086,
+            "recall": 0.9714285714285714,
+            "f1": 0.8395061728395062,
+            "support": 70
+          }
+        },
+        "n_samples": 190,
+        "mosquito_recall": 0.8,
+        "no_mosquito_recall": 0.9714285714285714,
+        "no_mosquito_false_positive_rate": 0.02857142857142858,
+        "presence_balanced_accuracy": 0.8857142857142857
+      },
+      "pcen": {
+        "accuracy": 0.6789473684210526,
+        "macro_f1": 0.5497766529909963,
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0,
+            7,
+            0,
+            5
+          ],
+          [
+            0,
+            20,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            3,
+            15,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            19,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            68
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.7058823529411765,
+            "recall": 0.5,
+            "f1": 0.5853658536585366,
+            "support": 24
+          },
+          "cx_quin": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091,
+            "support": 24
+          },
+          "an_dirus": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222,
+            "support": 24
+          },
+          "an_minimus_f": {
+            "precision": 0.3582089552238806,
+            "recall": 1.0,
+            "f1": 0.5274725274725275,
+            "support": 24
+          },
+          "an_minimus_m": {
+            "precision": 1.0,
+            "recall": 0.08333333333333333,
+            "f1": 0.15384615384615385,
+            "support": 24
+          },
+          "no_mosquito": {
+            "precision": 0.8395061728395061,
+            "recall": 0.9714285714285714,
+            "f1": 0.9006622516556292,
+            "support": 70
+          }
+        },
+        "n_samples": 190,
+        "mosquito_recall": 0.8916666666666667,
+        "no_mosquito_recall": 0.9714285714285714,
+        "no_mosquito_false_positive_rate": 0.02857142857142858,
+        "presence_balanced_accuracy": 0.9315476190476191
+      },
+      "paired": {
+        "prediction_agreement": 0.7263157894736842,
+        "logmel_wrong_pcen_right": 5,
+        "logmel_right_pcen_wrong": 24,
+        "mcnemar_exact_two_sided_p": 0.0005461126565933228,
+        "macro_f1_delta_pcen_minus_logmel": -0.19408884423632045,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          -0.26208092910981107,
+          -0.12359209415363755
+        ]
+      }
+    },
+    "LAB061_cross_acquisition_session": {
+      "evaluation_unit": "strict",
+      "evidence_role": "new acoustic acquisition; source content overlaps training groups",
+      "n": 1089,
+      "logmel": {
+        "accuracy": 0.7373737373737373,
+        "macro_f1": 0.638302924669175,
+        "confusion_matrix": [
+          [
+            71,
+            0,
+            0,
+            2,
+            0,
+            3
+          ],
+          [
+            4,
+            72,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            27,
+            3,
+            44,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            76,
+            0,
+            0
+          ],
+          [
+            0,
+            18,
+            0,
+            4,
+            29,
+            0
+          ],
+          [
+            51,
+            3,
+            0,
+            127,
+            25,
+            528
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.5634920634920635,
+            "recall": 0.9342105263157895,
+            "f1": 0.7029702970297029,
+            "support": 76
+          },
+          "cx_quin": {
+            "precision": 0.7741935483870968,
+            "recall": 0.9473684210526315,
+            "f1": 0.8520710059171597,
+            "support": 76
+          },
+          "an_dirus": {
+            "precision": 1.0,
+            "recall": 0.35526315789473684,
+            "f1": 0.5242718446601942,
+            "support": 76
+          },
+          "an_minimus_f": {
+            "precision": 0.3584905660377358,
+            "recall": 1.0,
+            "f1": 0.5277777777777778,
+            "support": 76
+          },
+          "an_minimus_m": {
+            "precision": 0.29591836734693877,
+            "recall": 0.5686274509803921,
+            "f1": 0.38926174496644295,
+            "support": 51
+          },
+          "no_mosquito": {
+            "precision": 0.9906191369606003,
+            "recall": 0.7193460490463215,
+            "f1": 0.8334648776637726,
+            "support": 734
+          }
+        },
+        "n_samples": 1089,
+        "mosquito_recall": 0.9859154929577465,
+        "no_mosquito_recall": 0.7193460490463215,
+        "no_mosquito_false_positive_rate": 0.2806539509536785,
+        "presence_balanced_accuracy": 0.852630771002034
+      },
+      "pcen": {
+        "accuracy": 0.6519742883379247,
+        "macro_f1": 0.5110135038101341,
+        "confusion_matrix": [
+          [
+            59,
+            1,
+            0,
+            15,
+            0,
+            1
+          ],
+          [
+            1,
+            73,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            10,
+            64,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            76,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            47,
+            2,
+            1
+          ],
+          [
+            22,
+            9,
+            0,
+            212,
+            1,
+            490
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.6941176470588235,
+            "recall": 0.7763157894736842,
+            "f1": 0.732919254658385,
+            "support": 76
+          },
+          "cx_quin": {
+            "precision": 0.8795180722891566,
+            "recall": 0.9605263157894737,
+            "f1": 0.9182389937106917,
+            "support": 76
+          },
+          "an_dirus": {
+            "precision": 1.0,
+            "recall": 0.13157894736842105,
+            "f1": 0.23255813953488372,
+            "support": 76
+          },
+          "an_minimus_f": {
+            "precision": 0.18269230769230768,
+            "recall": 1.0,
+            "f1": 0.30894308943089427,
+            "support": 76
+          },
+          "an_minimus_m": {
+            "precision": 0.6666666666666666,
+            "recall": 0.0392156862745098,
+            "f1": 0.07407407407407407,
+            "support": 51
+          },
+          "no_mosquito": {
+            "precision": 0.9959349593495935,
+            "recall": 0.667574931880109,
+            "f1": 0.7993474714518761,
+            "support": 734
+          }
+        },
+        "n_samples": 1089,
+        "mosquito_recall": 0.9943661971830986,
+        "no_mosquito_recall": 0.667574931880109,
+        "no_mosquito_false_positive_rate": 0.33242506811989103,
+        "presence_balanced_accuracy": 0.8309705645316038
+      },
+      "paired": {
+        "prediction_agreement": 0.7199265381083563,
+        "logmel_wrong_pcen_right": 64,
+        "logmel_right_pcen_wrong": 157,
+        "mcnemar_exact_two_sided_p": 3.35082393924997e-10,
+        "macro_f1_delta_pcen_minus_logmel": -0.12728942085904094,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          -0.16912568731173905,
+          -0.08071608436351882
+        ]
+      }
+    },
+    "LAB069_frozen_no_playback_background": {
+      "evaluation_unit": "strict",
+      "evidence_role": "post-selection frozen negative-only recording",
+      "n": 57,
+      "logmel": {
+        "accuracy": 1.0,
+        "macro_f1": 0.16666666666666666,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            57
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "cx_quin": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_dirus": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_minimus_f": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_minimus_m": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "no_mosquito": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 57
+          }
+        },
+        "n_samples": 57,
+        "mosquito_recall": null,
+        "no_mosquito_recall": 1.0,
+        "no_mosquito_false_positive_rate": 0.0,
+        "presence_balanced_accuracy": null
+      },
+      "pcen": {
+        "accuracy": 0.47368421052631576,
+        "macro_f1": 0.10714285714285715,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            28,
+            0,
+            27
+          ]
+        ],
+        "confusion_matrix_axes": {
+          "rows": "true labels",
+          "columns": "predicted labels",
+          "class_names": [
+            "ae_aegypti",
+            "cx_quin",
+            "an_dirus",
+            "an_minimus_f",
+            "an_minimus_m",
+            "no_mosquito"
+          ]
+        },
+        "per_class": {
+          "ae_aegypti": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "cx_quin": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_dirus": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_minimus_f": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "an_minimus_m": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "no_mosquito": {
+            "precision": 1.0,
+            "recall": 0.47368421052631576,
+            "f1": 0.6428571428571429,
+            "support": 57
+          }
+        },
+        "n_samples": 57,
+        "mosquito_recall": null,
+        "no_mosquito_recall": 0.47368421052631576,
+        "no_mosquito_false_positive_rate": 0.5263157894736843,
+        "presence_balanced_accuracy": null
+      },
+      "paired": {
+        "prediction_agreement": 0.47368421052631576,
+        "logmel_wrong_pcen_right": 0,
+        "logmel_right_pcen_wrong": 30,
+        "mcnemar_exact_two_sided_p": 1.862645149230957e-09,
+        "macro_f1_delta_pcen_minus_logmel": -0.05952380952380951,
+        "bootstrap_iterations": 4000,
+        "bootstrap_macro_f1_delta_95ci": [
+          -0.08008658008658008,
+          -0.039855072463768126
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "experiment": "E1 same-selected-fold FP32 versus full-integer TFLite INT8",
+  "evaluation_unit": {
+    "count": 2934,
+    "label_window_sec": 0.5,
+    "model_context_sec": 1.5,
+    "aggregation": "none; one class per 1.5-second context"
+  },
+  "checkpoint": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v004_original_audio_pcen_robust_5fold_20260917\\model\\fold_3\\best.pt",
+  "tflite": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v004_original_audio_pcen_robust_5fold_20260917\\export_full_test_verify\\model_overlap025.tflite",
+  "fold": 3,
+  "frontend": "pcen",
+  "fp32": {
+    "n_samples": 2934,
+    "accuracy": 0.9226312201772324,
+    "macro_f1": 0.9224734702855569,
+    "mosquito_recall": 0.9640081799591002,
+    "no_mosquito_recall": 0.8323108384458078,
+    "presence_balanced_accuracy": 0.8981595092024539,
+    "per_class": {
+      "ae_aegypti": {
+        "precision": 0.8747731397459165,
+        "recall": 0.9856850715746421,
+        "f1": 0.926923076923077,
+        "support": 489
+      },
+      "cx_quin": {
+        "precision": 0.9760348583877996,
+        "recall": 0.9161554192229039,
+        "f1": 0.9451476793248945,
+        "support": 489
+      },
+      "an_dirus": {
+        "precision": 0.9811764705882353,
+        "recall": 0.852760736196319,
+        "f1": 0.9124726477024069,
+        "support": 489
+      },
+      "an_minimus_f": {
+        "precision": 0.9420849420849421,
+        "recall": 0.9979550102249489,
+        "f1": 0.9692154915590865,
+        "support": 489
+      },
+      "an_minimus_m": {
+        "precision": 0.9567901234567902,
+        "recall": 0.950920245398773,
+        "f1": 0.9538461538461538,
+        "support": 489
+      },
+      "no_mosquito": {
+        "precision": 0.8222222222222222,
+        "recall": 0.8323108384458078,
+        "f1": 0.8272357723577236,
+        "support": 489
+      }
+    },
+    "confusion_matrix": [
+      [
+        482,
+        0,
+        1,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        448,
+        0,
+        1,
+        0,
+        40
+      ],
+      [
+        54,
+        0,
+        417,
+        0,
+        0,
+        18
+      ],
+      [
+        0,
+        0,
+        0,
+        488,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        465,
+        23
+      ],
+      [
+        15,
+        11,
+        7,
+        28,
+        21,
+        407
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "true",
+      "columns": "predicted",
+      "class_names": [
+        "ae_aegypti",
+        "cx_quin",
+        "an_dirus",
+        "an_minimus_f",
+        "an_minimus_m",
+        "no_mosquito"
+      ]
+    }
+  },
+  "int8": {
+    "n_samples": 2934,
+    "accuracy": 0.9209270620313565,
+    "macro_f1": 0.920819906315597,
+    "mosquito_recall": 0.9623721881390593,
+    "no_mosquito_recall": 0.8282208588957055,
+    "presence_balanced_accuracy": 0.8952965235173824,
+    "per_class": {
+      "ae_aegypti": {
+        "precision": 0.8763636363636363,
+        "recall": 0.9856850715746421,
+        "f1": 0.9278152069297402,
+        "support": 489
+      },
+      "cx_quin": {
+        "precision": 0.9798206278026906,
+        "recall": 0.8936605316973415,
+        "f1": 0.93475935828877,
+        "support": 489
+      },
+      "an_dirus": {
+        "precision": 0.9791666666666666,
+        "recall": 0.8650306748466258,
+        "f1": 0.9185667752442996,
+        "support": 489
+      },
+      "an_minimus_f": {
+        "precision": 0.9367816091954023,
+        "recall": 1.0,
+        "f1": 0.9673590504451038,
+        "support": 489
+      },
+      "an_minimus_m": {
+        "precision": 0.9568788501026694,
+        "recall": 0.9529652351738241,
+        "f1": 0.9549180327868853,
+        "support": 489
+      },
+      "no_mosquito": {
+        "precision": 0.8148893360160966,
+        "recall": 0.8282208588957055,
+        "f1": 0.8215010141987829,
+        "support": 489
+      }
+    },
+    "confusion_matrix": [
+      [
+        482,
+        0,
+        1,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        437,
+        0,
+        2,
+        0,
+        50
+      ],
+      [
+        52,
+        0,
+        423,
+        0,
+        0,
+        14
+      ],
+      [
+        0,
+        0,
+        0,
+        489,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        466,
+        22
+      ],
+      [
+        16,
+        9,
+        8,
+        30,
+        21,
+        405
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "true",
+      "columns": "predicted",
+      "class_names": [
+        "ae_aegypti",
+        "cx_quin",
+        "an_dirus",
+        "an_minimus_f",
+        "an_minimus_m",
+        "no_mosquito"
+      ]
+    }
+  },
+  "comparison": {
+    "prediction_agreement": 0.989093387866394,
+    "disagreement_count": 32,
+    "macro_f1_delta_int8_minus_fp32": -0.0016535639699599702,
+    "accuracy_delta_int8_minus_fp32": -0.001704158145875878,
+    "disagreement_transitions": {
+      "no_mosquito->an_dirus": 4,
+      "cx_quin->no_mosquito": 14,
+      "no_mosquito->ae_aegypti": 3,
+      "no_mosquito->an_minimus_f": 3,
+      "no_mosquito->cx_quin": 2,
+      "ae_aegypti->an_dirus": 3,
+      "cx_quin->an_minimus_f": 1,
+      "no_mosquito->an_minimus_m": 1,
+      "ae_aegypti->no_mosquito": 1
+    },
+    "disagreement_indices": [
+      3,
+      106,
+      116,
+      125,
+      284,
+      378,
+      605,
+      625,
+      714,
+      722,
+      734,
+      843,
+      927,
+      1174,
+      1289,
+      1340,
+      1380,
+      1383,
+      1519,
+      1545,
+      1634,
+      1753,
+      2060,
+      2068,
+      2282,
+      2289,
+      2429,
+      2484,
+      2628,
+      2759,
+      2845,
+      2921
+    ]
+  }
+}
