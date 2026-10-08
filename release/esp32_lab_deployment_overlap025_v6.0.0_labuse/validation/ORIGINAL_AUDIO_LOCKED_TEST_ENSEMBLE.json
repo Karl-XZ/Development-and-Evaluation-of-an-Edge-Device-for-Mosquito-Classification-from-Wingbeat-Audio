@@ -1,0 +1,113 @@
+{
+  "accuracy": 0.9144512610770279,
+  "macro_f1": 0.914605628724381,
+  "confusion_matrix": [
+    [
+      482,
+      0,
+      1,
+      0,
+      0,
+      6
+    ],
+    [
+      0,
+      445,
+      0,
+      0,
+      0,
+      44
+    ],
+    [
+      70,
+      0,
+      391,
+      0,
+      0,
+      28
+    ],
+    [
+      0,
+      0,
+      0,
+      486,
+      0,
+      3
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      458,
+      27
+    ],
+    [
+      14,
+      9,
+      5,
+      24,
+      16,
+      421
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "true labels",
+    "columns": "predicted labels",
+    "class_names": [
+      "ae_aegypti",
+      "cx_quin",
+      "an_dirus",
+      "an_minimus_f",
+      "an_minimus_m",
+      "no_mosquito"
+    ]
+  },
+  "per_class": {
+    "ae_aegypti": {
+      "precision": 0.8500881834215167,
+      "recall": 0.9856850715746421,
+      "f1": 0.9128787878787878,
+      "support": 489
+    },
+    "cx_quin": {
+      "precision": 0.9801762114537445,
+      "recall": 0.9100204498977505,
+      "f1": 0.9437963944856841,
+      "support": 489
+    },
+    "an_dirus": {
+      "precision": 0.9824120603015075,
+      "recall": 0.7995910020449898,
+      "f1": 0.8816234498308907,
+      "support": 489
+    },
+    "an_minimus_f": {
+      "precision": 0.94921875,
+      "recall": 0.9938650306748467,
+      "f1": 0.971028971028971,
+      "support": 489
+    },
+    "an_minimus_m": {
+      "precision": 0.9662447257383966,
+      "recall": 0.9366053169734151,
+      "f1": 0.9511941848390445,
+      "support": 489
+    },
+    "no_mosquito": {
+      "precision": 0.7958412098298677,
+      "recall": 0.8609406952965235,
+      "f1": 0.8271119842829077,
+      "support": 489
+    }
+  },
+  "n_samples": 2934,
+  "ensemble_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "warning": "This is the single locked outer-test result. Do not tune hyperparameters from it."
+}

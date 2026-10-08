@@ -1,0 +1,67 @@
+{
+  "package": "v6.0.0",
+  "scope": "four approximately 18-second functional sessions only; the one-hour default-mode audit is reported separately in V006_ONE_HOUR_LOGMEL_RUNTIME.json; no class-accuracy claim",
+  "all_passed": true,
+  "sessions": [
+    {
+      "mode": "A",
+      "session": "LAB086",
+      "frontend": "logmel",
+      "decimator": "pair",
+      "deployed_model": "logmel_selected_fold_int8",
+      "wav_seconds": 18.048,
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "prediction_rows": 5,
+      "skipped_hops": 0,
+      "dropped_blocks": 0,
+      "passed": true
+    },
+    {
+      "mode": "B",
+      "session": "LAB087",
+      "frontend": "pcen",
+      "decimator": "pair",
+      "deployed_model": "pcen_selected_fold_int8",
+      "wav_seconds": 18.144,
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "prediction_rows": 5,
+      "skipped_hops": 0,
+      "dropped_blocks": 0,
+      "passed": true
+    },
+    {
+      "mode": "F",
+      "session": "LAB088",
+      "frontend": "logmel",
+      "decimator": "lowpass",
+      "deployed_model": "logmel_lowpass_selected_fold_int8",
+      "wav_seconds": 18.08,
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "prediction_rows": 5,
+      "skipped_hops": 0,
+      "dropped_blocks": 0,
+      "passed": true
+    },
+    {
+      "mode": "H",
+      "session": "LAB089",
+      "frontend": "pcen",
+      "decimator": "lowpass",
+      "deployed_model": "pcen_lowpass_selected_fold_int8",
+      "wav_seconds": 18.176,
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "prediction_rows": 5,
+      "skipped_hops": 0,
+      "dropped_blocks": 0,
+      "passed": true
+    }
+  ]
+}

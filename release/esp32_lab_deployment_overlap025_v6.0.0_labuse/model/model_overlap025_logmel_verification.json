@@ -1,0 +1,88 @@
+{
+  "checkpoint": "C:\\Users\\Administrator\\Documents\\New project\\runs\\thesis_revision_20260921\\f002_logmel_5fold\\fold_3\\best.pt",
+  "frontend": "logmel",
+  "input_normalization": "global",
+  "class_names": [
+    "ae_aegypti",
+    "cx_quin",
+    "an_dirus",
+    "an_minimus_f",
+    "an_minimus_m",
+    "no_mosquito"
+  ],
+  "model_bytes": 25072,
+  "input_shape": [
+    1,
+    64,
+    151,
+    1
+  ],
+  "input_quantization": {
+    "scale": 0.05766034498810768,
+    "zero_point": 32
+  },
+  "output_quantization": {
+    "scale": 0.06618387997150421,
+    "zero_point": 16
+  },
+  "verification_samples": 2934,
+  "pytorch_keras_max_abs_logit_error": 3.814697265625e-06,
+  "keras_tflite_max_abs_logit_error": 8.16383171081543,
+  "prediction_agreement": 0.9965916837082481,
+  "tflite_accuracy_on_verification_subset": 0.9625085207907293,
+  "tflite_macro_f1_on_verification_subset": 0.9622357138386671,
+  "confusion_matrix": [
+    [
+      488,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      462,
+      0,
+      0,
+      0,
+      27
+    ],
+    [
+      14,
+      0,
+      468,
+      0,
+      0,
+      7
+    ],
+    [
+      0,
+      0,
+      0,
+      487,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      486,
+      2
+    ],
+    [
+      12,
+      12,
+      3,
+      15,
+      14,
+      433
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "true labels",
+    "columns": "predicted labels"
+  }
+}

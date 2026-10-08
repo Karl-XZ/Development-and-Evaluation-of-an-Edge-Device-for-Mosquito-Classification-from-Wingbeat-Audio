@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-17",
+  "scope": "independent package-copy smoke test",
+  "training_folder_validation": "passed for 123 paired original WAV/JSON files",
+  "gpu_training": "passed on NVIDIA GeForce RTX 3070",
+  "pcen_parameters": {
+    "alpha": 0.6,
+    "delta": 2.0,
+    "r": 0.25,
+    "time_constant_sec": 0.8
+  },
+  "int8_export": "passed",
+  "automatic_tflite_and_header_insertion": "passed",
+  "automatic_speed_patch_installation_and_hash_verification": "passed",
+  "arduino_compile": "passed",
+  "upload": "intentionally skipped in the isolated smoke copy",
+  "note": "The one-epoch capped smoke model was used only to verify automation. It is not included in the formal package; the package retains the full five-fold model."
+}

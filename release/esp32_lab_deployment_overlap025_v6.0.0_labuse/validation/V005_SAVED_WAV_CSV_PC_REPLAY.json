@@ -1,0 +1,1075 @@
+[
+  {
+    "session": "LAB079",
+    "frontend": "logmel",
+    "wav_seconds": 27.04,
+    "decisions": 8,
+    "class_agreement": 1.0,
+    "maximum_score_difference": 0.001506736641693096,
+    "mismatches": [],
+    "all_decisions": [
+      {
+        "index": 1,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003371158885002133
+      },
+      {
+        "index": 2,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.001506736641693096
+      },
+      {
+        "index": 3,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 5.616989140477813e-08
+      },
+      {
+        "index": 4,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003385588656663885
+      },
+      {
+        "index": 5,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003908182075500477
+      },
+      {
+        "index": 6,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0005244116142273381
+      },
+      {
+        "index": 7,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 8.255680923463515e-05
+      },
+      {
+        "index": 8,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0014272279514312737
+      }
+    ]
+  },
+  {
+    "session": "LAB080",
+    "frontend": "pcen",
+    "wav_seconds": 17.312,
+    "decisions": 5,
+    "class_agreement": 1.0,
+    "maximum_score_difference": 0.018874657909393355,
+    "mismatches": [],
+    "all_decisions": [
+      {
+        "index": 1,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0036386227676391547
+      },
+      {
+        "index": 2,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.004825405863571164
+      },
+      {
+        "index": 3,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 5.782722514867779e-05
+      },
+      {
+        "index": 4,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.018874657909393355
+      },
+      {
+        "index": 5,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006914902031707748
+      }
+    ]
+  },
+  {
+    "session": "LAB081",
+    "frontend": "logmel",
+    "wav_seconds": 264.064,
+    "decisions": 87,
+    "class_agreement": 1.0,
+    "maximum_score_difference": 0.010168835411071775,
+    "mismatches": [],
+    "all_decisions": [
+      {
+        "index": 1,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.004745943601989766
+      },
+      {
+        "index": 2,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.004324745287322962
+      },
+      {
+        "index": 3,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 6.649604159593577e-05
+      },
+      {
+        "index": 4,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.655696600680895e-08
+      },
+      {
+        "index": 5,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0015935415237903622
+      },
+      {
+        "index": 6,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.003624342872619618
+      },
+      {
+        "index": 7,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003591340141296806
+      },
+      {
+        "index": 8,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.004667201322364811
+      },
+      {
+        "index": 9,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00032777103469371766
+      },
+      {
+        "index": 10,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0054847971481323254
+      },
+      {
+        "index": 11,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0005535192443847925
+      },
+      {
+        "index": 12,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 3.440980911317837e-08
+      },
+      {
+        "index": 13,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 5.9593844985961555e-05
+      },
+      {
+        "index": 14,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 6.102388206720346e-05
+      },
+      {
+        "index": 15,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 1.4830721285194188e-05
+      },
+      {
+        "index": 16,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.000353412736320495
+      },
+      {
+        "index": 17,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003480787716627111
+      },
+      {
+        "index": 18,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00038959153823847625
+      },
+      {
+        "index": 19,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0005597922193527234
+      },
+      {
+        "index": 20,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00030770796127319033
+      },
+      {
+        "index": 21,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.005507513699340827
+      },
+      {
+        "index": 22,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.000351643958282466
+      },
+      {
+        "index": 23,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0058369815025329785
+      },
+      {
+        "index": 24,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.1915845870599266e-08
+      },
+      {
+        "index": 25,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.004488695101165785
+      },
+      {
+        "index": 26,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.003220819110107409
+      },
+      {
+        "index": 27,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.003428431038665747
+      },
+      {
+        "index": 28,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 1.5190190631151268e-05
+      },
+      {
+        "index": 29,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00037161942138674853
+      },
+      {
+        "index": 30,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 8.503723147867959e-08
+      },
+      {
+        "index": 31,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0011479922630310072
+      },
+      {
+        "index": 32,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00027954875106811494
+      },
+      {
+        "index": 33,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0009883569510936718
+      },
+      {
+        "index": 34,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 2.2675030785799036e-05
+      },
+      {
+        "index": 35,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.005511681873702989
+      },
+      {
+        "index": 36,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.071766281132927e-05
+      },
+      {
+        "index": 37,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 1.4756923918426024e-05
+      },
+      {
+        "index": 38,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 3.928216099743833e-08
+      },
+      {
+        "index": 39,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.002363730214691162
+      },
+      {
+        "index": 40,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0001250030199438333
+      },
+      {
+        "index": 41,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00015840162327587608
+      },
+      {
+        "index": 42,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00019021168181896156
+      },
+      {
+        "index": 43,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0013524527549743648
+      },
+      {
+        "index": 44,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0029917669799804925
+      },
+      {
+        "index": 45,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.728164670897428e-08
+      },
+      {
+        "index": 46,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.000652183443450971
+      },
+      {
+        "index": 47,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00028678292083740564
+      },
+      {
+        "index": 48,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 5.317175956442955e-06
+      },
+      {
+        "index": 49,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00026329607390165356
+      },
+      {
+        "index": 50,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 5.405027907788747e-05
+      },
+      {
+        "index": 51,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.006974049494934076
+      },
+      {
+        "index": 52,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 2.6598708444833686e-05
+      },
+      {
+        "index": 53,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0023677843466758663
+      },
+      {
+        "index": 54,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.6393585195758646e-08
+      },
+      {
+        "index": 55,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.010168835411071775
+      },
+      {
+        "index": 56,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0016692315742492525
+      },
+      {
+        "index": 57,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0006572434699654572
+      },
+      {
+        "index": 58,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0008293646057367342
+      },
+      {
+        "index": 59,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0011506176635742715
+      },
+      {
+        "index": 60,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0036420268775939624
+      },
+      {
+        "index": 61,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.006087440922355664
+      },
+      {
+        "index": 62,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 2.306280495971446e-05
+      },
+      {
+        "index": 63,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003147592821717265
+      },
+      {
+        "index": 64,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 3.712768559260837e-08
+      },
+      {
+        "index": 65,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.001858365863800046
+      },
+      {
+        "index": 66,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0008877238800049092
+      },
+      {
+        "index": 67,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 3.4652900382876797e-06
+      },
+      {
+        "index": 68,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.2973285675040884e-05
+      },
+      {
+        "index": 69,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 3.2775810674578e-05
+      },
+      {
+        "index": 70,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00031009337768550527
+      },
+      {
+        "index": 71,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.003586822173309301
+      },
+      {
+        "index": 72,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.00395382784118653
+      },
+      {
+        "index": 73,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.000519565313863754
+      },
+      {
+        "index": 74,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0008310802327156051
+      },
+      {
+        "index": 75,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 4.6557243168349194e-08
+      },
+      {
+        "index": 76,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 1.2650723116099886e-05
+      },
+      {
+        "index": 77,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0006350649871825764
+      },
+      {
+        "index": 78,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 3.0688295464217615e-05
+      },
+      {
+        "index": 79,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0019208255096435645
+      },
+      {
+        "index": 80,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.005139672384643523
+      },
+      {
+        "index": 81,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0007966524652242672
+      },
+      {
+        "index": 82,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 8.91265868885327e-08
+      },
+      {
+        "index": 83,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0005944050682067381
+      },
+      {
+        "index": 84,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0036541790473938462
+      },
+      {
+        "index": 85,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 1.0612869261183988e-07
+      },
+      {
+        "index": 86,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0004377819609880443
+      },
+      {
+        "index": 87,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0020455656379699816
+      }
+    ]
+  },
+  {
+    "session": "LAB083",
+    "frontend": "pcen",
+    "wav_seconds": 142.016,
+    "decisions": 47,
+    "class_agreement": 1.0,
+    "maximum_score_difference": 0.017114380210494995,
+    "mismatches": [],
+    "all_decisions": [
+      {
+        "index": 1,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.014274461917114234
+      },
+      {
+        "index": 2,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006693326474761951
+      },
+      {
+        "index": 3,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 1.577893000096072e-06
+      },
+      {
+        "index": 4,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.008324079013061536
+      },
+      {
+        "index": 5,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.00023391607375145007
+      },
+      {
+        "index": 6,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.004123652224349961
+      },
+      {
+        "index": 7,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.003194667764282233
+      },
+      {
+        "index": 8,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.012485771444702198
+      },
+      {
+        "index": 9,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0038366751617431305
+      },
+      {
+        "index": 10,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 1.4316619968973162e-06
+      },
+      {
+        "index": 11,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 6.879271488934762e-05
+      },
+      {
+        "index": 12,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0041530261154174575
+      },
+      {
+        "index": 13,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.003334983214569043
+      },
+      {
+        "index": 14,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.017114380210494995
+      },
+      {
+        "index": 15,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006994079507064821
+      },
+      {
+        "index": 16,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.004039243286895755
+      },
+      {
+        "index": 17,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006478740249252324
+      },
+      {
+        "index": 18,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 3.0246978759751464e-05
+      },
+      {
+        "index": 19,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.00664961707153322
+      },
+      {
+        "index": 20,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006876624448394764
+      },
+      {
+        "index": 21,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0033556847709655946
+      },
+      {
+        "index": 22,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.009886297129631044
+      },
+      {
+        "index": 23,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 6.56346664614975e-05
+      },
+      {
+        "index": 24,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.006883490481948862
+      },
+      {
+        "index": 25,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.009514316172027582
+      },
+      {
+        "index": 26,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.004274568297576886
+      },
+      {
+        "index": 27,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.005832966132354733
+      },
+      {
+        "index": 28,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.00541648865509034
+      },
+      {
+        "index": 29,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0051562984382629296
+      },
+      {
+        "index": 30,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0003198359073758126
+      },
+      {
+        "index": 31,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.000257593898963928
+      },
+      {
+        "index": 32,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 1.7926150173298094e-07
+      },
+      {
+        "index": 33,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.011470339141845698
+      },
+      {
+        "index": 34,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.005354076418495168
+      },
+      {
+        "index": 35,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.006019006679916394
+      },
+      {
+        "index": 36,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0026145011735916046
+      },
+      {
+        "index": 37,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0022436956230164062
+      },
+      {
+        "index": 38,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.00026832689361572237
+      },
+      {
+        "index": 39,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0034423406316757277
+      },
+      {
+        "index": 40,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 2.3518125444534267e-07
+      },
+      {
+        "index": 41,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.0033439975329399158
+      },
+      {
+        "index": 42,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 6.127193778604273e-05
+      },
+      {
+        "index": 43,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 1.5315610930323595e-05
+      },
+      {
+        "index": 44,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 0.003392198154449466
+      },
+      {
+        "index": 45,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.000415273119354298
+      },
+      {
+        "index": 46,
+        "pc_class": "no_mosquito",
+        "esp32_class": "no_mosquito",
+        "class_equal": true,
+        "maximum_score_difference": 0.0001848350502013929
+      },
+      {
+        "index": 47,
+        "pc_class": "an_minimus_f",
+        "esp32_class": "an_minimus_f",
+        "class_equal": true,
+        "maximum_score_difference": 5.333373137414443e-05
+      }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "checkpoint": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v006_original_pcen_lowpass_5fold_20260930\\model\\fold_3\\best.pt",
+  "frontend": "pcen",
+  "resample_mode": "esp32_lowpass",
+  "input_normalization": "global",
+  "class_names": [
+    "ae_aegypti",
+    "cx_quin",
+    "an_dirus",
+    "an_minimus_f",
+    "an_minimus_m",
+    "no_mosquito"
+  ],
+  "model_bytes": 25072,
+  "input_shape": [
+    1,
+    64,
+    151,
+    1
+  ],
+  "input_quantization": {
+    "scale": 0.09094446152448654,
+    "zero_point": -115
+  },
+  "output_quantization": {
+    "scale": 0.09476789832115173,
+    "zero_point": 43
+  },
+  "verification_samples": 240,
+  "pytorch_keras_max_abs_logit_error": 9.5367431640625e-06,
+  "keras_tflite_max_abs_logit_error": 2.191227912902832,
+  "prediction_agreement": 0.9875,
+  "tflite_accuracy_on_verification_subset": 0.9083333333333333,
+  "tflite_macro_f1_on_verification_subset": 0.9075173593248174,
+  "confusion_matrix": [
+    [
+      39,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      37,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      9,
+      0,
+      31,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      40,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      38,
+      2
+    ],
+    [
+      0,
+      3,
+      1,
+      0,
+      3,
+      33
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "true labels",
+    "columns": "predicted labels"
+  }
+}

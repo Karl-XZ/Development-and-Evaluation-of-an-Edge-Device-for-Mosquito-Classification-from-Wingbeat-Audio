@@ -1,0 +1,1913 @@
+{
+  "package_version": "v6.0.0",
+  "frontend": "pcen",
+  "decimator": "pair",
+  "pcen": {
+    "pcen_alpha": 0.6,
+    "pcen_delta": 2.0,
+    "pcen_r": 0.25,
+    "pcen_time_constant": 0.8,
+    "pcen_eps": 1e-06
+  },
+  "model_sha256": "b980a2b5e39fe5c44c008b3ca617999effb8b8d79349f54775e7fb0693f5173f",
+  "tested_decisions": 30,
+  "tested_subwindows": 90,
+  "feature_exact_equal_fraction_mean": 0.999989652317881,
+  "feature_max_absolute_difference": 1,
+  "raw_output_exact_equal_fraction_mean": 0.7796296296296296,
+  "raw_output_max_absolute_difference": 2,
+  "subwindow_prediction_agreement": 0.9888888888888889,
+  "aggregate_prediction_agreement": 1.0,
+  "mean_feature_ms_per_context": 111.96666666666667,
+  "mean_inference_ms_per_context": 667.5974999999999,
+  "speed_patch_runtime_target": "CNN inference below 1000 ms per 1.5 s context",
+  "decisions": [
+    {
+      "source_label": "ae_aegypti",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "2212.250000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.58
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 113,
+            "inference_ms": 667.714
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.657
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0001316666603088379
+    },
+    {
+      "source_label": "ae_aegypti",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "2383.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.644
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.628
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.641
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0007717609405517578
+    },
+    {
+      "source_label": "ae_aegypti",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "3198.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.66
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.63
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.556
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0030945688486099243
+    },
+    {
+      "source_label": "ae_aegypti",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1984.250000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.644
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.617
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.624
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 2.1755695343017578e-05
+    },
+    {
+      "source_label": "ae_aegypti",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_170000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "3149.004302",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.669
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.613
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.638
+          }
+        }
+      ],
+      "aggregate_pc": "ae_aegypti",
+      "aggregate_esp32": "ae_aegypti",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0004887580871582031
+    },
+    {
+      "source_label": "cx_quin",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "278.000001",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.498
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.561
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.612
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0005075158551335335
+    },
+    {
+      "source_label": "cx_quin",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "108.007085",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.576
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.16666666666666666,
+            "mean_absolute_difference": 0.8333333333333334,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.463
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.415
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.007216215133666992
+    },
+    {
+      "source_label": "cx_quin",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260701_150000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "800.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.536
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.593
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.581
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.005759894847869873
+    },
+    {
+      "source_label": "cx_quin",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "91.000000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.602
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.475
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.3333333333333333,
+            "mean_absolute_difference": 0.6666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.6
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0012230277061462402
+    },
+    {
+      "source_label": "cx_quin",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "46.001730",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.548
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.593
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.603
+          }
+        }
+      ],
+      "aggregate_pc": "cx_quin",
+      "aggregate_esp32": "cx_quin",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.000760495662689209
+    },
+    {
+      "source_label": "an_dirus",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "3469.000000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.616
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.558
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.641
+          }
+        }
+      ],
+      "aggregate_pc": "an_dirus",
+      "aggregate_esp32": "an_dirus",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.009702637791633606
+    },
+    {
+      "source_label": "an_dirus",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "2081.971690",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.593
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.621
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.662
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.003332376480102539
+    },
+    {
+      "source_label": "an_dirus",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "252.611679",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.543
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 0.9997930463576159,
+            "mean_absolute_difference": 0.00020695364238410596,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.629
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.594
+          }
+        }
+      ],
+      "aggregate_pc": "an_dirus",
+      "aggregate_esp32": "an_dirus",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.00011990265920758247
+    },
+    {
+      "source_label": "an_dirus",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260701_210000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "869.672259",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.611
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.695
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.583
+          }
+        }
+      ],
+      "aggregate_pc": "an_dirus",
+      "aggregate_esp32": "an_dirus",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 9.298324584960938e-05
+    },
+    {
+      "source_label": "an_dirus",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260702_060000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1917.286955",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 113,
+            "inference_ms": 667.526
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": false,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.638
+          },
+          "pc_raw": [
+            53,
+            -14,
+            54,
+            -31,
+            27,
+            -83
+          ],
+          "esp32_raw": [
+            54,
+            -14,
+            53,
+            -32,
+            27,
+            -83
+          ],
+          "pc_class": "an_dirus",
+          "esp32_class": "ae_aegypti"
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.636
+          }
+        }
+      ],
+      "aggregate_pc": "an_dirus",
+      "aggregate_esp32": "an_dirus",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.01064002513885498
+    },
+    {
+      "source_label": "an_minimus_f",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1217.251416",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.63
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.514
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.657
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 1.3951212167739868e-05
+    },
+    {
+      "source_label": "an_minimus_f",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260717_200000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "2540.004335",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.618
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.518
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.587
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.00012636184692382812
+    },
+    {
+      "source_label": "an_minimus_f",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "802.095789",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 111,
+            "inference_ms": 667.573
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.599
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.639
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0008026957511901855
+    },
+    {
+      "source_label": "an_minimus_f",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1688.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.621
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.629
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.552
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0009436085820198059
+    },
+    {
+      "source_label": "an_minimus_f",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260718_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "442.003263",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.57
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.656
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.558
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_f",
+      "aggregate_esp32": "an_minimus_f",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0011869072914123535
+    },
+    {
+      "source_label": "an_minimus_m",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_M/An_minimus_M__Cage-02__rec3526849229_20260718_020000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "383.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.657
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.651
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.664
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_m",
+      "aggregate_esp32": "an_minimus_m",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.006358936429023743
+    },
+    {
+      "source_label": "an_minimus_m",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_M/An_minimus_M__Cage-02__rec3526849229_20260716_160000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1636.000432",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.624
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.587
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.642
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.00038195541128516197
+    },
+    {
+      "source_label": "an_minimus_m",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_M/An_minimus_M__Cage-02__rec3526849229_20260718_020000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "572.250770",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.61
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.588
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.677
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_m",
+      "aggregate_esp32": "an_minimus_m",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 8.071583579294384e-06
+    },
+    {
+      "source_label": "an_minimus_m",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_M/An_minimus_M__Cage-02__rec3526849229_20260717_230000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1312.501980",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.5,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.564
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.668
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.0,
+            "mean_absolute_difference": 1.0,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.708
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_m",
+      "aggregate_esp32": "an_minimus_m",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 1.1820346117019653e-05
+    },
+    {
+      "source_label": "an_minimus_m",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_M/An_minimus_M__Cage-02__rec3526849229_20260718_020000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1030.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.597
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.659
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 0.999896523178808,
+            "mean_absolute_difference": 0.00010347682119205298,
+            "max_absolute_difference": 1
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.635
+          }
+        }
+      ],
+      "aggregate_pc": "an_minimus_m",
+      "aggregate_esp32": "an_minimus_m",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0023050904273986816
+    },
+    {
+      "source_label": "no_mosquito",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_dirus_M/An_dirus_M__rec3526849229__20260702_100000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "379.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.588
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.589
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.637
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.0006440281867980957
+    },
+    {
+      "source_label": "no_mosquito",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260701_190000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "97.500000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.511
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.44
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.529
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 6.472159839177039e-07
+    },
+    {
+      "source_label": "no_mosquito",
+      "source_wav": "C:/Users/Administrator/Documents/New project/An_minimus_F/An_minimus_F__Cage-03__rec2178794111_20260717_200000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "2436.000000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.571
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.528
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.561
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.005797147750854492
+    },
+    {
+      "source_label": "no_mosquito",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Ae_aegypti_M/Ae_aegypti_M__rec1145691507__20260702_110000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "1060.750000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.5,
+            "max_absolute_difference": 2
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.599
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.6666666666666666,
+            "mean_absolute_difference": 0.3333333333333333,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.636
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.559
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 0.006610453128814697
+    },
+    {
+      "source_label": "no_mosquito",
+      "source_wav": "C:/Users/Administrator/Documents/New project/Cx_quin_M/Cx_quin_M__rec2178794111__20260702_050000_sr44100_b24_c1_packed24_1h__mos_labeled.wav",
+      "source_start_sec": "310.250000",
+      "contexts": [
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.547
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.547
+          }
+        },
+        {
+          "feature": {
+            "exact_equal_fraction": 1.0,
+            "mean_absolute_difference": 0.0,
+            "max_absolute_difference": 0
+          },
+          "raw_output": {
+            "exact_equal_fraction": 0.8333333333333334,
+            "mean_absolute_difference": 0.16666666666666666,
+            "max_absolute_difference": 1
+          },
+          "prediction_equal": true,
+          "timing": {
+            "feature_ms": 112,
+            "inference_ms": 667.564
+          }
+        }
+      ],
+      "aggregate_pc": "no_mosquito",
+      "aggregate_esp32": "no_mosquito",
+      "aggregate_prediction_equal": true,
+      "max_probability_difference": 4.60538431070745e-05
+    }
+  ],
+  "acceptance_checks": {
+    "feature_exact_fraction_at_least_0_995": true,
+    "feature_max_difference_at_most_1": true,
+    "raw_output_max_difference_at_most_2": true,
+    "subwindow_class_agreement_at_least_0_98": true,
+    "all_aggregate_classes_equal": true,
+    "three_context_mean_within_3s": true
+  },
+  "passed": true
+}

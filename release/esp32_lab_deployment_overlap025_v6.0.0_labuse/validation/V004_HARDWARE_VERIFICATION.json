@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-17",
+  "board": "Arduino Nano ESP32 (ESP32-S3)",
+  "fqbn": "arduino:esp32:nano_nora",
+  "port_used": "COM12",
+  "firmware": "lab_realtime_recorder_v004_pcen_exact3s",
+  "model": "original_audio_pcen_robust_selected_fold_int8",
+  "model_sha256": "b980a2b5e39fe5c44c008b3ca617999effb8b8d79349f54775e7fb0693f5173f",
+  "deployed_int8_outer_test": {
+    "windows": 2934,
+    "accuracy": 0.9209270620313565,
+    "macro_f1": 0.920819906315597,
+    "float_int8_class_agreement": 0.989093387866394
+  },
+  "speed_patch": {
+    "identity": "cmsis_nn_verified_3file",
+    "hash_verification": "passed",
+    "automatic_wrapper_compile_and_upload": "passed",
+    "mean_cnn_inference_ms_per_1_5s_context": 667.4819444444445,
+    "runtime_target_ms": 1000
+  },
+  "pc_esp32_same_pcm": {
+    "tested_decisions": 6,
+    "tested_subwindows": 18,
+    "feature_exact_equal_fraction_mean": 0.9999827538631347,
+    "feature_max_absolute_difference_int8": 1,
+    "subwindow_prediction_agreement": 1.0,
+    "aggregate_prediction_agreement": 1.0
+  },
+  "live_recording_download": {
+    "session": "LAB065",
+    "wav_duration_sec": 14.304,
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "prediction_rows": 4,
+    "dropped_audio_blocks": 0,
+    "skipped_hops_total_final": 0,
+    "explicit_historical_download_and_validation": "passed"
+  },
+  "binary_checks": {
+    "tflite_equals_embedded_header": true,
+    "precompiled_equals_fresh_build": true,
+    "application_binary_sha256": "52e36608249bef894bfcc811a9c4d219e3207faf25426d5e6d47f3bc01cffa7c",
+    "compile_program_storage_bytes": 457861,
+    "compile_dynamic_memory_bytes": 36668
+  }
+}

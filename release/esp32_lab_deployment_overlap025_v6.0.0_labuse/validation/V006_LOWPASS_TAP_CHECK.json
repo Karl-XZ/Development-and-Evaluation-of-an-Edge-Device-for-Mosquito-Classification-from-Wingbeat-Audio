@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scipy_reference": "resample_poly(x,1,2,window=('kaiser',8.6))",
+  "taps": 41,
+  "coefficient_max_error": 1.871710541115999e-17,
+  "waveform_max_errors": {
+    "random_pcm16": 3.5762786865234375e-07,
+    "edge_impulse": 1.871710541115999e-17,
+    "five_khz": 7.869675755500793e-08,
+    "wingbeat_420_hz": 2.980232238769531e-07
+  }
+}

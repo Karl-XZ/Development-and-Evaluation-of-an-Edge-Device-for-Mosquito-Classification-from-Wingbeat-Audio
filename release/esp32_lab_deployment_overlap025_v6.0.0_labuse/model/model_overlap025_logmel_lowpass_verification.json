@@ -1,0 +1,89 @@
+{
+  "checkpoint": "C:\\Users\\Administrator\\Documents\\New project\\runs\\v006_original_logmel_lowpass_5fold_20260930\\model\\fold_3\\best.pt",
+  "frontend": "logmel",
+  "resample_mode": "esp32_lowpass",
+  "input_normalization": "global",
+  "class_names": [
+    "ae_aegypti",
+    "cx_quin",
+    "an_dirus",
+    "an_minimus_f",
+    "an_minimus_m",
+    "no_mosquito"
+  ],
+  "model_bytes": 25072,
+  "input_shape": [
+    1,
+    64,
+    151,
+    1
+  ],
+  "input_quantization": {
+    "scale": 0.05729964002966881,
+    "zero_point": 32
+  },
+  "output_quantization": {
+    "scale": 0.08072257786989212,
+    "zero_point": 24
+  },
+  "verification_samples": 240,
+  "pytorch_keras_max_abs_logit_error": 4.76837158203125e-06,
+  "keras_tflite_max_abs_logit_error": 1.2912883758544922,
+  "prediction_agreement": 0.9958333333333333,
+  "tflite_accuracy_on_verification_subset": 0.9458333333333333,
+  "tflite_macro_f1_on_verification_subset": 0.9454009692239085,
+  "confusion_matrix": [
+    [
+      40,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      37,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      2,
+      0,
+      37,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      39,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      40,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      1,
+      2,
+      34
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "true labels",
+    "columns": "predicted labels"
+  }
+}

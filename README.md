@@ -1,14 +1,14 @@
 # Development and Evaluation of an Edge Device for Mosquito Classification from Wingbeat Audio
 
-This repository contains the reproducible software artifact for a six-class mosquito wingbeat-audio classifier running on an Arduino Nano ESP32 (ESP32-S3). The current release implements an 8 kHz, 64-band Mel frontend with log-Mel by default and optional PCEN, matched compact INT8 convolutional neural networks, exact 3.0-second decision aggregation, continuous WAV/CSV recording, and recovery of historical SD-card sessions.
+This repository contains the reproducible software artifact for a six-class mosquito wingbeat-audio classifier running on an Arduino Nano ESP32 (ESP32-S3). The current release provides matched log-Mel or PCEN frontends with adjacent-average or low-pass 16-to-8 kHz decimation, compact INT8 convolutional neural networks, exact 3.0-second decision aggregation, continuous WAV/CSV recording, and recovery of historical SD-card sessions.
 
 ## Current release
 
-The current laboratory package is **v5.0.0**: [`release/esp32_lab_deployment_overlap025_v5.0.0_labuse`](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/README.md).
+The current laboratory package is **v6.0.0**: [`release/esp32_lab_deployment_overlap025_v6.0.0_labuse`](release/esp32_lab_deployment_overlap025_v6.0.0_labuse/README.md).
 
 It contains:
 
-- pretrained log-Mel and PCEN INT8 TFLite models and matching embedded C headers, using the same original-audio training data and split;
+- four matched INT8 TFLite models and embedded C headers for log-Mel or PCEN with adjacent-average or low-pass decimation;
 - complete Arduino firmware and precompiled binaries;
 - a five-fold retraining pipeline from WAV/JSON pairs;
 - automatic INT8 export, model-header replacement, speed-patch installation, compilation, and flashing;
@@ -32,7 +32,7 @@ The deployed signal path is:
 
 ```text
 INMP441, 16 kHz mono PCM16
--> paired-sample reduction to 8 kHz
+-> matched adjacent-average or low-pass decimation to 8 kHz
 -> 256-point STFT, 80-sample hop
 -> 64-band Mel power
 -> log-Mel by default, or context-local PCEN when selected
@@ -42,13 +42,13 @@ INMP441, 16 kHz mono PCM16
 -> timestamped CSV plus the corresponding raw WAV
 ```
 
-The optional PCEN frontend uses `alpha=0.6`, `delta=2.0`, `r=0.25`, `time_constant=0.8 s`, and `epsilon=1e-6`. Stop the current session with `E`, select log-Mel with `A` or PCEN with `B`, and start a new session with `4`. Power-on defaults to log-Mel.
+The optional PCEN frontend uses `alpha=0.6`, `delta=2.0`, `r=0.25`, `time_constant=0.8 s`, and `epsilon=1e-6`. Stop the current session with `E`, select `A` (log-Mel/adjacent average), `B` (PCEN/adjacent average), `F` (log-Mel/low-pass), or `H` (PCEN/low-pass), and start a new session with `4`. Power-on defaults to `A`.
 
 ## Quick start
 
 On Windows, use a short checkout path such as `C:\mosquito` to avoid path-length limits. The repository preserves the exact CMSIS-NN patch bytes across Git line-ending settings.
 
-Open PowerShell in `release/esp32_lab_deployment_overlap025_v5.0.0_labuse` and follow one of the two supported paths.
+Open PowerShell in `release/esp32_lab_deployment_overlap025_v6.0.0_labuse` and follow one of the two supported paths.
 
 ### Flash the included model
 
@@ -68,20 +68,22 @@ powershell -ExecutionPolicy Bypass -File .\tools\retrain_build_flash.ps1 `
   -Port COM12
 ```
 
-This command performs dataset checks, recording-level splits, five-fold log-Mel training by default, validation-only fold selection, locked-test evaluation, full INT8 export, model/header installation, speed-patch verification, firmware compilation, and flashing. Add `-Frontend pcen` to train and replace the PCEN pair; after flashing, select `B` before starting a PCEN session. The release [README](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/README.md) gives the complete data layout, manual commands, serial controls, download procedure, and CSV schema.
+This command performs dataset checks, recording-level splits, five-fold log-Mel/adjacent-average training by default, validation-only fold selection, locked-test evaluation, full INT8 export, model/header installation, speed-patch verification, firmware compilation, flashing, and a same-PCM PC/ESP32 check. Use `-Frontend pcen` and/or `-Decimator lowpass` for another matched option. The release [README](release/esp32_lab_deployment_overlap025_v6.0.0_labuse/README.md) gives the complete data layout, commands, serial controls, download procedure, and CSV schema.
 
 ## Verified implementation properties
 
-The v5.0.0 checks recorded:
+The v6.0.0 checks recorded:
 
-- log-Mel same-PCM agreement in 90/90 subwindow classes and 30/30 exact-3-second aggregate classes, with 99.9971% exact INT8 feature agreement and a maximum difference of one unit;
-- PCEN same-PCM agreement in 89/90 subwindow classes and 30/30 aggregate classes, with 99.9990% exact INT8 feature agreement and a maximum difference of one unit; the differing subwindow had identical quantized input features and nearly tied outputs;
-- 147/147 aggregate classes reproduced on the PC from four saved hardware-session WAV/CSV pairs;
-- mean CNN inference time of about 668 ms per context with the automatic speed patch;
-- both training branches passed isolated one-epoch smoke training, INT8 export, model/header replacement, and compilation; source and precompiled uploads were tested;
-- the downloaded sessions had valid 16 kHz mono PCM16 recordings, with no recorded dropped blocks or skipped decisions. The longest v5.0.0 session in this audit was 264.064 seconds; the one-hour historical audit below used an earlier configuration.
+- all four frontend/decimator options matched PC aggregate classes on 30/30 strict three-second decisions each; the PCEN/adjacent-average option had one differing subwindow class among 90, while all other options matched 90/90;
+- four approximately 18-second microphone-and-SD sessions, one per option, saved valid WAV/CSV files with zero recorded dropped blocks or skipped decisions;
+- the default log-Mel/adjacent-average configuration recorded 3,600 seconds and 1,200 three-second predictions in session LAB095, with zero recording errors, dropped blocks, or skipped decisions;
+- the PC and ESP32 agreed on all 1,200 aggregate classes when processing LAB095's saved PCM; this unlabelled environmental recording does not provide classification accuracy or Macro-F1.
 
-The corresponding reports are in [`release/esp32_lab_deployment_overlap025_v5.0.0_labuse/validation`](release/esp32_lab_deployment_overlap025_v5.0.0_labuse/validation/). PCEN still produced substantial positive outputs in the current desktop-room background; target-setting validation is needed when choosing the frontend.
+The corresponding reports are in [`release/esp32_lab_deployment_overlap025_v6.0.0_labuse/validation`](release/esp32_lab_deployment_overlap025_v6.0.0_labuse/validation/). The one-hour report covers the default option; the other three options have short hardware sessions and same-PCM checks.
+
+## Historical v5.0.0 implementation audit
+
+The previous dual-frontend release is preserved in [`history/esp32_lab_deployment_overlap025_v5.0.0_labuse`](history/esp32_lab_deployment_overlap025_v5.0.0_labuse/README.md), including its original model bytes, firmware, validation reports, and short WAV/CSV sessions. Its longest recorded hardware session in that release was 264.064 seconds.
 
 ## Historical v4.0.0 implementation audit
 
@@ -99,7 +101,7 @@ The source reports for these historical checks are stored in [`history/esp32_lab
 
 ## Historical versions
 
-Deployment versions v1.0.0 through v4.0.0 are stored in [`history/`](history/README.md). Folder names follow `esp32_lab_deployment_overlap025_vX.0.0_labuse`; the current version is v5.0.0. Internal firmware filenames and saved report filenames are retained so the archived and tested artifacts remain identifiable.
+Deployment versions v1.0.0 through v5.0.0 are stored in [`history/`](history/README.md). Folder names follow `esp32_lab_deployment_overlap025_vX.0.0_labuse`; the current version is v6.0.0. Internal firmware filenames and saved report filenames are retained so the archived and tested artifacts remain identifiable.
 
 ## Data availability
 

@@ -1,0 +1,15 @@
+# firmware=lab_realtime_recorder_v006_four_frontends_exact3s
+# frontend=pcen
+# decimator=pair
+# deployed_model=pcen_selected_fold_int8
+# speed_patch=cmsis_nn_verified_3file
+# pcen_alpha=0.6,pcen_delta=2.0,pcen_r=0.25,pcen_time_constant_sec=0.8,pcen_eps=0.000001
+# sample_rate_hz=16000,channels=1,bits_per_sample=16
+# maximum_recording_seconds=3600
+# mode=4,calibrated=0
+result_index,session_elapsed_ms,audio_end_ms,support_start_ms,support_end_ms,mode,class,ae_aegypti,cx_quin,an_dirus,an_minimus_f,an_minimus_m,no_mosquito,calibrated,no_margin,no_threshold,snapshot_wait_ms,feature_ms,infer_ms,audio_lag_ms,latency_ms,skipped_hops_total
+1,4280,3000,0,3000,4,an_minimus_f,0.0003204,0.0054190,0.0000077,0.5431211,0.0006235,0.4505084,0,-0.0926127,0.0000000,2,363,2137,1000,3978,0
+2,7261,6000,3000,6000,4,no_mosquito,0.0003086,0.0038572,0.0000110,0.4159519,0.0007919,0.5790794,0,0.1631275,0.0000000,3,359,2113,976,2948,0
+3,10280,9000,6000,9000,4,no_mosquito,0.0006239,0.0088876,0.0000138,0.4604360,0.0023257,0.5277131,0,0.0672770,0.0000000,2,361,2114,984,2979,0
+4,13276,12000,9000,12000,4,no_mosquito,0.0001693,0.0020083,0.0000028,0.4894594,0.0007492,0.5076109,0,0.0181515,0.0000000,2,363,2109,992,2958,0
+5,16255,15000,12000,15000,4,no_mosquito,0.0011174,0.0095355,0.0000341,0.1708380,0.0013215,0.8171536,0,0.6463156,0.0000000,2,365,2110,968,2947,0

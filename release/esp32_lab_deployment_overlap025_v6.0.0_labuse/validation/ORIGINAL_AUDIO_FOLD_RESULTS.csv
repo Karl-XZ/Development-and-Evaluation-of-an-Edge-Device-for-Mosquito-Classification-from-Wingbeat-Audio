@@ -1,0 +1,6 @@
+fold,best_epoch,best_validation_loss,best_validation_accuracy,best_validation_macro_f1,epochs_completed,checkpoint
+1,25,0.17534689794275404,0.9455856986043594,0.929245064398362,30,C:\Users\Administrator\Documents\New project\runs\v004_original_audio_pcen_robust_5fold_20260917\model\fold_1\best.pt
+2,25,0.25603520835192956,0.9053524804177546,0.8935839718763489,30,C:\Users\Administrator\Documents\New project\runs\v004_original_audio_pcen_robust_5fold_20260917\model\fold_2\best.pt
+3,29,0.23051566047833696,0.9405940594059405,0.942124768958308,30,C:\Users\Administrator\Documents\New project\runs\v004_original_audio_pcen_robust_5fold_20260917\model\fold_3\best.pt
+4,19,0.17875669527762006,0.9438943894389439,0.9326075398323,27,C:\Users\Administrator\Documents\New project\runs\v004_original_audio_pcen_robust_5fold_20260917\model\fold_4\best.pt
+5,24,0.1984542833644281,0.9382303839732888,0.9296398924576951,30,C:\Users\Administrator\Documents\New project\runs\v004_original_audio_pcen_robust_5fold_20260917\model\fold_5\best.pt

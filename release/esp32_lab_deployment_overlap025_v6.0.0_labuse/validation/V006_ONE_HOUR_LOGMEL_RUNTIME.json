@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-30",
+  "package": "v6.0.0",
+  "session": "LAB095",
+  "firmware": "lab_realtime_recorder_v006_four_frontends_exact3s",
+  "firmware_sha256": "bd68c085edb99d6c8c0dacea039b153f9ad47a326b736a00fdf9de5868cf815f",
+  "frontend": "logmel",
+  "decimator": "pair",
+  "model": "logmel_selected_fold_int8",
+  "model_sha256": "f5c80321c59020ae86213939cd1bcb600ede8069ced0bacd3a31eea54465c6bc",
+  "runtime": {
+    "wav_duration_seconds": 3600.0,
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "prediction_rows": 1200,
+    "recording_error": 0,
+    "dropped_blocks": 0,
+    "skipped_hops": 0,
+    "wav_sha256": "4b5970c0edc7b9f380644a56a0c8c2b633bd0526988e5239d60be4932feea07f",
+    "csv_sha256": "377e5c4f5ad6dca2c20ea112de5f009caf154ad790bc008d576621e6662ea83c"
+  },
+  "same_pcm": {
+    "protocol": "1200 non-overlapping 3-second decisions, each aggregating three 1.5-second contexts",
+    "subwindows": 3600,
+    "pc_esp32_aggregate_class_agreement": "1200/1200",
+    "pc_esp32_subwindow_class_agreement": "3597/3600",
+    "feature_exact_equal_fraction_mean": 0.9999389774190679,
+    "feature_max_absolute_difference_int8": 1,
+    "recorded_csv_vs_pc_replay_aggregate_class_agreement": "1200/1200"
+  },
+  "source_evidence": {
+    "archive": "v006_LAB095_阶段性结论_含测试代码_20260930.zip",
+    "archive_sha256": "e4da727c258eae1ed4a51eca6142c82bb531c7c717ac49f6cd967641c02c1600",
+    "files": [
+      "runtime_audit.json",
+      "v006_same_pcm_summary.json",
+      "v006_same_pcm_decisions.csv",
+      "LAB095.CSV"
+    ],
+    "wav_in_archive": false
+  },
+  "scope": "One-hour runtime and same-PCM implementation audit for the default log-Mel/pair configuration only; no window-level ground truth, classification accuracy, or Macro-F1 claim."
+}
